@@ -4,5 +4,5 @@
     <migrationTask xmi:id="_kjIkUKMxEfCSLaaXBZDiLA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_kgsUUaMxEfCSLaaXBZDiLA" login="local_user@artha.com" firstName="local" lastName="user" type="DQ" additionnalData="{}"/>
-  <TalendProperties:User xmi:id="_vg-gMKNYEfCe2u0zIkF0ng" login="hamidi@artha.com" firstName="hamidi" lastName="hamidi" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_SB8EwKNXEfCCffcx9oCh6g" login="hamidi@artha.com" firstName="hamidi" lastName="hamidi" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
