@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="SIT" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="PRD">
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQQJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQQZ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQQp6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQQ56SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQRJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQRZ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQRp6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQQJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQQZ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQQp6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQQ56SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQRJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQRZ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQRp6SEfC7Z-GSSSvlNA"/>
       <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_vhNesKTiEfCz5IzPOerd0Q"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="UAT">
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQR56SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQSJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQSZ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQSp6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQS56SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQTJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQTZ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQR56SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQSJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQSZ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQSp6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQS56SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQTJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQTZ6SEfC7Z-GSSSvlNA"/>
       <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_vhOFwKTiEfCz5IzPOerd0Q"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="SIT">
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQTp6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQT56SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQUJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQUZ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQUp6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQU56SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_SumQVJ6SEfC7Z-GSSSvlNA"/>
-      <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="_DR47wJT8EfCZqcrU6Z_J-w" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQTp6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQT56SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQUJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQUZ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQUp6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQU56SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SumQVJ6SEfC7Z-GSSSvlNA"/>
+      <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="film" internalId="_vhOFwaTiEfCz5IzPOerd0Q"/>
     </context>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -100,8 +103,8 @@
     </parameters>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="400">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_1"/>
     </node>
@@ -113,19 +116,82 @@
       <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tLogCatcher_1">
-        <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="400">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_7ClokJ5-EfC7Z-GSSSvlNA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="error_log">
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="200" name="table" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="error_log">
+          <mapperTableEntries name="moment" expression="row1.moment " type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="row1.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="row1.root_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="row1.father_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="row1.project " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="row1.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="table" expression="context.table_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="row1.context " type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="row1.priority " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="row1.type " type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="row1.origin " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="row1.message " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="row1.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
     </node>
     <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="400">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
@@ -140,11 +206,11 @@
       <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
       <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pHT7sPzf+o1YIPOtsHW2qDtw5AHf7SrIwJrbkibX" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;error_log&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
-      <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
       <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="moment" show="false"/>
       <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
       <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
@@ -155,6 +221,9 @@
       <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
       <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+      <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
       <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
       <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -163,66 +232,71 @@
       <elementParameter field="TABLE" name="ADD_COLS"/>
       <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
       <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-        <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="moment" id="0"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid" id="5"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid" id="10"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid" id="15"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="project" id="20"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job" id="25"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="table" id="30"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="context" id="35"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="priority" id="40"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="type" id="45"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="origin" id="50"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="message" id="55"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="code" id="60"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="64"/>
       </elementParameter>
       <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
       <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -234,31 +308,33 @@
       <elementParameter field="TEXT" name="LABEL" value="error_log"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBOutput_1">
-        <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="200" name="table" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" name="REJECT">
-        <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="200" name="table" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -273,8 +349,8 @@
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="520">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;error has been occured, please check you log&quot;);"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;error has been occured, please check your log&quot;);"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_4"/>
     </node>
@@ -314,8 +390,8 @@
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="200">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_2"/>
     </node>
@@ -338,9 +414,13 @@
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tLogCatcher_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
     </connection>
-    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tDBOutput_1">
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="error_log" lineStyle="0" metaname="error_log" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="error_log" show="false"/>
     </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tDBCommit_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
@@ -361,38 +441,38 @@
     </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="Context_Load_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>

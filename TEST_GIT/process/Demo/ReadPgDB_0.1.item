@@ -3,53 +3,56 @@
   <context confirmationNeeded="false" hide="false" name="SIT">
     <contextParameter comment="" name="app_name" prompt="app_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;dvd_rent&quot;" internalId="_7E25sJj9EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce1Zj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce1pj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce15j-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce2Jj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce2Zj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce2pj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce25j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce1Zj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce1pj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce15j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce2Jj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce2Zj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce2pj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ce25j-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce3Jj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce3Zj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce3pj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce35j-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce4Jj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce4Zj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_7ClokJ5-EfC7Z-GSSSvlNA" type="id_String" value="film" internalId="_vhOFwaTiEfCz5IzPOerd0Q"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="UAT">
     <contextParameter comment="" name="app_name" prompt="app_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;dvd_rent&quot;" internalId="_7E25sJj9EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ceyJj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ceyZj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ceypj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cey5j-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cezJj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cezZj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cezpj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ceyJj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ceyZj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ceypj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cey5j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cezJj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cezZj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cezpj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cez5j-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce0Jj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce0Zj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce0pj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce05j-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ce1Jj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_7ClokJ5-EfC7Z-GSSSvlNA" type="id_String" value="" internalId="_vhOFwaTiEfCz5IzPOerd0Q"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="PRD">
     <contextParameter comment="" name="app_name" prompt="app_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;dvd_rent&quot;" internalId="_7E25sJj9EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6ceu5j-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cevJj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cevZj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cevpj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cev5j-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cewJj-EfC_V6lBu79mbQ"/>
-    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cewZj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6ceu5j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cevJj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cevZj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cevpj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cev5j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cewJj-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_w6cewZj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cewpj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cew5j-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cexJj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cexZj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cexpj-EfC_V6lBu79mbQ"/>
     <contextParameter comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="_g2X-IJj-EfC_V6lBu79mbQ" type="id_String" value="" internalId="_w6cex5j-EfC_V6lBu79mbQ"/>
+    <contextParameter comment="" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_7ClokJ5-EfC7Z-GSSSvlNA" type="id_String" value="" internalId="_vhNesKTiEfCz5IzPOerd0Q"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -94,7 +97,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:iF6Q1FWFZ2itutJPI1vDpducin2DjWQ++xdr8sJL" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:AmkUCaYleicKYlsYQb83ltt3xM0M1rvfNtCK+7En" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -117,7 +120,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
@@ -129,7 +132,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zkAJFwX1Yn9CKMmEzv5X86DtT/b6tBn1EcXS5/H1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:w7YRyapFXdzHkl4qBdlTMpRj9IhlWzxZIqG9ig99" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -167,7 +170,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&#x9;&quot;SELECT payment_id, customer_id, staff_id, rental_id, amount, payment_date&#xD;&#xA;FROM public.payments&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&#x9;&quot;SELECT payment_id, customer_id, staff_id, rental_id, amount, payment_date&#xD;&#xA;FROM public.payment&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -179,18 +182,18 @@
     <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="staff_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="rental_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="amount"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="payment_date"/>
-      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="staff_id" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rental_id" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amount" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_date" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="payment"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -217,18 +220,18 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="staff_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="rental_id"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="amount"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="payment_date"/>
-      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="staff_id" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rental_id" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amount" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_date" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -317,38 +320,38 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Audit_Logger_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_2" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
 </talendfile:ProcessType>

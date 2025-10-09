@@ -4,76 +4,163 @@
     "contextName" : "PRD",
     "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
     "parameterList" : [ {
-      "id" : "_a28x1qTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ5pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_ad_jdbc_params"
     }, {
-      "id" : "_a28x16TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ55j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_database"
     }, {
-      "id" : "_a28x0aTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ4Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_host"
     }, {
-      "id" : "_a28x1aTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ5Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_password"
     }, {
-      "id" : "_a28x0qTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ4pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_port"
     }, {
-      "id" : "_a28x06TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ45j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_schema"
     }, {
-      "id" : "_a28x1KTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ5Jj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_g2X-IJj-EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_g3KoYZj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_database"
+    }, {
+      "id" : "_g3KoX5j-EfC_V6lBu79mbQ",
+      "name" : "db_pg_host"
+    }, {
+      "id" : "_g3KoY5j-EfC_V6lBu79mbQ",
+      "name" : "db_pg_password"
+    }, {
+      "id" : "_g3KoYJj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_port"
+    }, {
+      "id" : "_g3KoZJj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_schema"
+    }, {
+      "id" : "_g3KoYpj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_username"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_7ClokJ5-EfC7Z-GSSSvlNA",
+    "parameterList" : [ {
+      "id" : "_vhNesKTiEfCz5IzPOerd0Q",
+      "name" : "table_name"
     } ]
   }, {
     "contextName" : "UAT",
     "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
     "parameterList" : [ {
-      "id" : "_a28xzqTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ3pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_ad_jdbc_params"
     }, {
-      "id" : "_a28xz6TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ35j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_database"
     }, {
-      "id" : "_a28xyaTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ2Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_host"
     }, {
-      "id" : "_a28xzaTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ3Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_password"
     }, {
-      "id" : "_a28xyqTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ2pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_port"
     }, {
-      "id" : "_a28xy6TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ25j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_schema"
     }, {
-      "id" : "_a28xzKTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ3Jj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_g2X-IJj-EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_g3KoWpj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_database"
+    }, {
+      "id" : "_g3KoWJj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_host"
+    }, {
+      "id" : "_g3KoXJj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_password"
+    }, {
+      "id" : "_g3KoWZj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_port"
+    }, {
+      "id" : "_g3KoXZj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_schema"
+    }, {
+      "id" : "_g3KoW5j-EfC_V6lBu79mbQ",
+      "name" : "db_pg_username"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_7ClokJ5-EfC7Z-GSSSvlNA",
+    "parameterList" : [ {
+      "id" : "_vhOFwKTiEfCz5IzPOerd0Q",
+      "name" : "table_name"
     } ]
   }, {
     "contextName" : "SIT",
     "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
     "parameterList" : [ {
-      "id" : "_a28xxqTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ1pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_ad_jdbc_params"
     }, {
-      "id" : "_a28xx6TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ15j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_database"
     }, {
-      "id" : "_a28xwaTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ0Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_host"
     }, {
-      "id" : "_a28xxaTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ1Zj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_password"
     }, {
-      "id" : "_a28xwqTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ0pj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_port"
     }, {
-      "id" : "_a28xw6TEEfCaUKMgqzha5A",
+      "id" : "_wvSJ05j5EfC_V6lBu79mbQ",
       "name" : "db_mssql_schema"
     }, {
-      "id" : "_a28xxKTEEfCaUKMgqzha5A",
+      "id" : "_wvSJ1Jj5EfC_V6lBu79mbQ",
       "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "SIT",
+    "repoId" : "_g2X-IJj-EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_g3KoU5j-EfC_V6lBu79mbQ",
+      "name" : "db_pg_database"
+    }, {
+      "id" : "_g3KoUZj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_host"
+    }, {
+      "id" : "_g3KoVZj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_password"
+    }, {
+      "id" : "_g3KoUpj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_port"
+    }, {
+      "id" : "_g3KoVpj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_schema"
+    }, {
+      "id" : "_g3KoVJj-EfC_V6lBu79mbQ",
+      "name" : "db_pg_username"
+    } ]
+  }, {
+    "contextName" : "SIT",
+    "repoId" : "_7ClokJ5-EfC7Z-GSSSvlNA",
+    "parameterList" : [ {
+      "id" : "_vhOFwaTiEfCz5IzPOerd0Q",
+      "name" : "table_name"
     } ]
   } ]
 }

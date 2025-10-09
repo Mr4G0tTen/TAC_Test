@@ -2,31 +2,6 @@
   "itemId" : "_SW8O8J52EfC7Z-GSSSvlNA",
   "contextList" : [ {
     "contextName" : "PRD",
-    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
-    "parameterList" : [ {
-      "id" : "_wJeqoJ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_ad_jdbc_params"
-    }, {
-      "id" : "_wJeqoZ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_database"
-    }, {
-      "id" : "_wJeqop52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_host"
-    }, {
-      "id" : "_wJeqo552EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_password"
-    }, {
-      "id" : "_wJeqpJ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_port"
-    }, {
-      "id" : "_wJeqpZ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_schema"
-    }, {
-      "id" : "_wJeqpp52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_username"
-    } ]
-  }, {
-    "contextName" : "PRD",
     "repoId" : "_g2X-IJj-EfC_V6lBu79mbQ",
     "parameterList" : [ {
       "id" : "_g3KoYZj-EfC_V6lBu79mbQ",
@@ -49,31 +24,6 @@
     } ]
   }, {
     "contextName" : "UAT",
-    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
-    "parameterList" : [ {
-      "id" : "_wJeqrZ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_ad_jdbc_params"
-    }, {
-      "id" : "_wJeqrp52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_database"
-    }, {
-      "id" : "_wJeqr552EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_host"
-    }, {
-      "id" : "_wJeqsJ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_password"
-    }, {
-      "id" : "_wJeqsZ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_port"
-    }, {
-      "id" : "_wJeqsp52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_schema"
-    }, {
-      "id" : "_wJeqs552EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_username"
-    } ]
-  }, {
-    "contextName" : "UAT",
     "repoId" : "_g2X-IJj-EfC_V6lBu79mbQ",
     "parameterList" : [ {
       "id" : "_g3KoWpj-EfC_V6lBu79mbQ",
@@ -93,31 +43,6 @@
     }, {
       "id" : "_g3KoW5j-EfC_V6lBu79mbQ",
       "name" : "db_pg_username"
-    } ]
-  }, {
-    "contextName" : "SIT",
-    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
-    "parameterList" : [ {
-      "id" : "_wJequp52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_ad_jdbc_params"
-    }, {
-      "id" : "_wJequ552EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_database"
-    }, {
-      "id" : "_wJeqvJ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_host"
-    }, {
-      "id" : "_wJeqvZ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_password"
-    }, {
-      "id" : "_wJeqvp52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_port"
-    }, {
-      "id" : "_wJeqv552EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_schema"
-    }, {
-      "id" : "_wJeqwJ52EfC7Z-GSSSvlNA",
-      "name" : "db_mssql_username"
     } ]
   }, {
     "contextName" : "SIT",
