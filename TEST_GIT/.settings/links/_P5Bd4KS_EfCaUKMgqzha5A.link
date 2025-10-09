@@ -1,0 +1,79 @@
+{
+  "itemId" : "_P5Bd4KS_EfCaUKMgqzha5A",
+  "contextList" : [ {
+    "contextName" : "PRD",
+    "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
+    "parameterList" : [ {
+      "id" : "_a28x1qTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_a28x16TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_a28x0aTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_a28x1aTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_a28x0qTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_a28x06TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_a28x1KTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
+    "parameterList" : [ {
+      "id" : "_a28xzqTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_a28xz6TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_a28xyaTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_a28xzaTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_a28xyqTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_a28xy6TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_a28xzKTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "SIT",
+    "repoId" : "_a2WU0KTEEfCaUKMgqzha5A",
+    "parameterList" : [ {
+      "id" : "_a28xxqTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_a28xx6TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_a28xwaTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_a28xxaTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_a28xwqTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_a28xw6TEEfCaUKMgqzha5A",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_a28xxKTEEfCaUKMgqzha5A",
+      "name" : "db_mssql_username"
+    } ]
+  } ]
+}

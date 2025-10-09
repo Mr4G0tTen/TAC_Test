@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_a28xwKTEEfCaUKMgqzha5A" confirmationNeeded="false" hide="false" name="SIT">
+    <contextParameter xmi:id="_a28xwaTEEfCaUKMgqzha5A" comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xwqTEEfCaUKMgqzha5A" comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xw6TEEfCaUKMgqzha5A" comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xxKTEEfCaUKMgqzha5A" comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xxaTEEfCaUKMgqzha5A" comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xxqTEEfCaUKMgqzha5A" comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xx6TEEfCaUKMgqzha5A" comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_a28xyKTEEfCaUKMgqzha5A" confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter xmi:id="_a28xyaTEEfCaUKMgqzha5A" comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xyqTEEfCaUKMgqzha5A" comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xy6TEEfCaUKMgqzha5A" comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xzKTEEfCaUKMgqzha5A" comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xzaTEEfCaUKMgqzha5A" comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xzqTEEfCaUKMgqzha5A" comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28xz6TEEfCaUKMgqzha5A" comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_a28x0KTEEfCaUKMgqzha5A" confirmationNeeded="false" hide="false" name="PRD">
+    <contextParameter xmi:id="_a28x0aTEEfCaUKMgqzha5A" comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x0qTEEfCaUKMgqzha5A" comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x06TEEfCaUKMgqzha5A" comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x1KTEEfCaUKMgqzha5A" comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x1aTEEfCaUKMgqzha5A" comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x1qTEEfCaUKMgqzha5A" comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_a28x16TEEfCaUKMgqzha5A" comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
