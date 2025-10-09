@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g3KoUJj-EfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="SIT">
+    <contextParameter xmi:id="_g3KoUZj-EfC_V6lBu79mbQ" comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoUpj-EfC_V6lBu79mbQ" comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoU5j-EfC_V6lBu79mbQ" comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoVJj-EfC_V6lBu79mbQ" comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoVZj-EfC_V6lBu79mbQ" comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoVpj-EfC_V6lBu79mbQ" comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g3KoV5j-EfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter xmi:id="_g3KoWJj-EfC_V6lBu79mbQ" comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoWZj-EfC_V6lBu79mbQ" comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoWpj-EfC_V6lBu79mbQ" comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoW5j-EfC_V6lBu79mbQ" comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoXJj-EfC_V6lBu79mbQ" comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoXZj-EfC_V6lBu79mbQ" comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g3KoXpj-EfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="PRD">
+    <contextParameter xmi:id="_g3KoX5j-EfC_V6lBu79mbQ" comment="" name="db_pg_host" prompt="db_pg_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoYJj-EfC_V6lBu79mbQ" comment="" name="db_pg_port" prompt="db_pg_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoYZj-EfC_V6lBu79mbQ" comment="" name="db_pg_database" prompt="db_pg_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoYpj-EfC_V6lBu79mbQ" comment="" name="db_pg_username" prompt="db_pg_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoY5j-EfC_V6lBu79mbQ" comment="" name="db_pg_password" prompt="db_pg_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_g3KoZJj-EfC_V6lBu79mbQ" comment="" name="db_pg_schema" prompt="db_pg_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

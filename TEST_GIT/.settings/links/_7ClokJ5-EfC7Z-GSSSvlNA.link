@@ -1,0 +1,86 @@
+{
+  "itemId" : "_7ClokJ5-EfC7Z-GSSSvlNA",
+  "contextList" : [ {
+    "contextName" : "PRD",
+    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_SumQQJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_SumQQZ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_SumQQp6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_SumQQ56SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_SumQRJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_SumQRZ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_SumQRp6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_SumQR56SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_SumQSJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_SumQSZ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_SumQSp6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_SumQS56SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_SumQTJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_SumQTZ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "SIT",
+    "repoId" : "_wuii8Jj5EfC_V6lBu79mbQ",
+    "parameterList" : [ {
+      "id" : "_SumQTp6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_ad_jdbc_params"
+    }, {
+      "id" : "_SumQT56SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_database"
+    }, {
+      "id" : "_SumQUJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_host"
+    }, {
+      "id" : "_SumQUZ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_password"
+    }, {
+      "id" : "_SumQUp6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_port"
+    }, {
+      "id" : "_SumQU56SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_schema"
+    }, {
+      "id" : "_SumQVJ6SEfC7Z-GSSSvlNA",
+      "name" : "db_mssql_username"
+    } ]
+  }, {
+    "contextName" : "SIT",
+    "repoId" : "_DR47wJT8EfCZqcrU6Z_J-w",
+    "parameterList" : [ {
+      "id" : "_Ho3mIJj5EfC_V6lBu79mbQ",
+      "name" : "db_context_filepath"
+    } ]
+  } ]
+}

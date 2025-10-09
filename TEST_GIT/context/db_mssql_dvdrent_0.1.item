@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_In-wYJkSEfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="SIT">
+    <contextParameter xmi:id="_In-wYZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_host" prompt="db_mssql_dvd_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wYpkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_port" prompt="db_mssql_dvd_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wY5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_schema" prompt="db_mssql_dvd_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wZJkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_username" prompt="db_mssql_dvd_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wZZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_password" prompt="db_mssql_dvd_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wZpkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_ad_jdbc_params" prompt="db_mssql_dvd_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wZ5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_database" prompt="db_mssql_dvd_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_In-waJkSEfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter xmi:id="_In-waZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_host" prompt="db_mssql_dvd_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wapkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_port" prompt="db_mssql_dvd_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wa5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_schema" prompt="db_mssql_dvd_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wbJkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_username" prompt="db_mssql_dvd_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wbZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_password" prompt="db_mssql_dvd_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wbpkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_ad_jdbc_params" prompt="db_mssql_dvd_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wb5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_database" prompt="db_mssql_dvd_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_In-wcJkSEfC_V6lBu79mbQ" confirmationNeeded="false" hide="false" name="PRD">
+    <contextParameter xmi:id="_In-wcZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_host" prompt="db_mssql_dvd_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wcpkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_port" prompt="db_mssql_dvd_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wc5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_schema" prompt="db_mssql_dvd_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wdJkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_username" prompt="db_mssql_dvd_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wdZkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_password" prompt="db_mssql_dvd_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wdpkSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_ad_jdbc_params" prompt="db_mssql_dvd_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_In-wd5kSEfC_V6lBu79mbQ" comment="" name="db_mssql_dvd_database" prompt="db_mssql_dvd_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
