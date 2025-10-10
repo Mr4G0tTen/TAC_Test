@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_oQUa4T4fEfCNDsra3F4Lpg" name="DEV">
+    <contextParameter xmi:id="_oQ8tAD4fEfCNDsra3F4Lpg" comment="" name="run_flag" prompt="run_flag?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_oQ8tAT4fEfCNDsra3F4Lpg" comment="" name="extraction_start_date" prompt="extraction_start_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tAj4fEfCNDsra3F4Lpg" comment="" name="extraction_end_date" prompt="extraction_end_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tAz4fEfCNDsra3F4Lpg" comment="" name="month_key" prompt="month_key?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tBD4fEfCNDsra3F4Lpg" comment="" name="flag_message" prompt="flag_message?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_oQUa4j4fEfCNDsra3F4Lpg" name="PROD">
+    <contextParameter xmi:id="_oQ8tBT4fEfCNDsra3F4Lpg" comment="" name="run_flag" prompt="run_flag?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_oQ8tBj4fEfCNDsra3F4Lpg" comment="" name="extraction_start_date" prompt="extraction_start_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tBz4fEfCNDsra3F4Lpg" comment="" name="extraction_end_date" prompt="extraction_end_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tCD4fEfCNDsra3F4Lpg" comment="" name="month_key" prompt="month_key?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tCT4fEfCNDsra3F4Lpg" comment="" name="flag_message" prompt="flag_message?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_oQUa4z4fEfCNDsra3F4Lpg" name="TEST">
+    <contextParameter xmi:id="_oQ8tCj4fEfCNDsra3F4Lpg" comment="" name="run_flag" prompt="run_flag?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_oQ8tCz4fEfCNDsra3F4Lpg" comment="" name="extraction_start_date" prompt="extraction_start_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tDD4fEfCNDsra3F4Lpg" comment="" name="extraction_end_date" prompt="extraction_end_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tDT4fEfCNDsra3F4Lpg" comment="" name="month_key" prompt="month_key?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oQ8tDj4fEfCNDsra3F4Lpg" comment="" name="flag_message" prompt="flag_message?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

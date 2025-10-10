@@ -1,0 +1,56 @@
+{
+  "itemId" : "_D6TaAD3xEfCbW4TNr9rxbQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_tk774OkXEemZ4JiZqBnqow",
+    "parameterList" : [ {
+      "id" : "_KoiaAqPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_date"
+    }, {
+      "id" : "_KoiaAaPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_run_id"
+    }, {
+      "id" : "_KoiaA6PNEeqxBtqScJi_wQ",
+      "name" : "parameter_record_insert_datetime"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_tk774OkXEemZ4JiZqBnqow",
+    "parameterList" : [ {
+      "id" : "_KoiaBqPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_date"
+    }, {
+      "id" : "_KoiaBaPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_run_id"
+    }, {
+      "id" : "_KoiaB6PNEeqxBtqScJi_wQ",
+      "name" : "parameter_record_insert_datetime"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_tk774OkXEemZ4JiZqBnqow",
+    "parameterList" : [ {
+      "id" : "_KoiaAqPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_date"
+    }, {
+      "id" : "_KoiaAaPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_run_id"
+    }, {
+      "id" : "_KoiaA6PNEeqxBtqScJi_wQ",
+      "name" : "parameter_record_insert_datetime"
+    } ]
+  }, {
+    "contextName" : "TEST",
+    "repoId" : "_tk774OkXEemZ4JiZqBnqow",
+    "parameterList" : [ {
+      "id" : "_KoiaCqPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_date"
+    }, {
+      "id" : "_KoiaCaPNEeqxBtqScJi_wQ",
+      "name" : "parameter_etl_job_run_id"
+    }, {
+      "id" : "_KoiaC6PNEeqxBtqScJi_wQ",
+      "name" : "parameter_record_insert_datetime"
+    } ]
+  } ]
+}

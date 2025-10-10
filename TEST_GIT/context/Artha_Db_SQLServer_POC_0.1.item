@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZvtLUP8MEe-uHLRosiKKBg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ZvtLUf8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Login" prompt="Artha_Db_SQLServer_POC_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="user1"/>
+  <contextParameter xmi:id="_ZvtLUv8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Server" prompt="Artha_Db_SQLServer_POC_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="192.168.10.120"/>
+  <contextParameter xmi:id="_ZvtLU_8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Password" prompt="Artha_Db_SQLServer_POC_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:4yTwihlwpZYsPreQDLQtNMvxm2NliO8Wtku9OBPYFssf7r3r"/>
+  <contextParameter xmi:id="_ZvtLVP8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_AdditionalParams" prompt="Artha_Db_SQLServer_POC_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_ZvtLVf8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Database" prompt="Artha_Db_SQLServer_POC_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="poc"/>
+  <contextParameter xmi:id="_ZvtLVv8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Schema" prompt="Artha_Db_SQLServer_POC_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="ITM"/>
+  <contextParameter xmi:id="_ZvtLV_8MEe-uHLRosiKKBg" comment="" name="Artha_Db_SQLServer_POC_Port" prompt="Artha_Db_SQLServer_POC_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433"/>
+</talendfile:ContextType>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_pSzCQKr4Ee-1dN3Aj2aLKA" name="Local_Postgres" id="_MJr-EKr4Ee-1dN3Aj2aLKA" label="Local_Postgres" dataPackage="_pXxo4Kr4Ee-1dN3Aj2aLKA" ContextMode="true" ContextId="_o-gNQKr4Ee-1dN3Aj2aLKA" contextName="Default" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/Transaksi?" dbVersionString="V9_X" Port="context.Local_Postgres_Port" Username="context.Local_Postgres_Login" Password="context.Local_Postgres_Password" ServerName="context.Local_Postgres_Server" DatasourceName="" FileFieldName="" SID="context.Local_Postgres_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="context.Local_Postgres_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.Local_Postgres_Schema" supportNLS="false">
+    <taggedValue xmi:id="_pTK1sKr4Ee-1dN3Aj2aLKA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_pUPzwKr4Ee-1dN3Aj2aLKA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_pU6iIKr4Ee-1dN3Aj2aLKA" tag="Status" value=""/>
+    <taggedValue xmi:id="_pU6iIar4Ee-1dN3Aj2aLKA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pU6iIqr4Ee-1dN3Aj2aLKA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_pU6iI6r4Ee-1dN3Aj2aLKA" tag="Description" value=""/>
+    <taggedValue xmi:id="_pU6iJKr4Ee-1dN3Aj2aLKA" tag="Author" value=""/>
+    <taggedValue xmi:id="_pU6iJar4Ee-1dN3Aj2aLKA" tag="otherParameter"/>
+    <taggedValue xmi:id="_pWMUgKr4Ee-1dN3Aj2aLKA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_pWMUgar4Ee-1dN3Aj2aLKA" tag="DB ProductVersion" value="16.4"/>
+    <taggedValue xmi:id="_pWMUgqr4Ee-1dN3Aj2aLKA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_pTK1sar4Ee-1dN3Aj2aLKA" key="CONN_PARA_KEY_USERNAME" value="context.Local_Postgres_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_pXxo4Kr4Ee-1dN3Aj2aLKA" name="Transaksi" dataManager="_pSzCQKr4Ee-1dN3Aj2aLKA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_pX1TQKr4Ee-1dN3Aj2aLKA" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_5SwucK0zEe-bUdESWtsAJw" name="categories" id="_5Sm9cK0zEe-bUdESWtsAJw" label="categories" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_5Swuca0zEe-bUdESWtsAJw" name="category_id" label="category_id" length="10" sourceType="INT4" talendType="id_Integer">
+          <taggedValue xmi:id="_5Swucq0zEe-bUdESWtsAJw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_5Swuc60zEe-bUdESWtsAJw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_5SwudK0zEe-bUdESWtsAJw" name="INT4" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_5Swuda0zEe-bUdESWtsAJw" name="category_name" label="category_name" length="50" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_5Swudq0zEe-bUdESWtsAJw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_5Swud60zEe-bUdESWtsAJw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_5SwueK0zEe-bUdESWtsAJw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

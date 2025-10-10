@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_pADscKr4Ee-1dN3Aj2aLKA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_pAETgKr4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Database" prompt="Local_Postgres_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="Transaksi"/>
+  <contextParameter xmi:id="_pAETgar4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_AdditionalParams" prompt="Local_Postgres_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_pAETgqr4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Password" prompt="Local_Postgres_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:hNPG89dL1/PFmYQHedMeYu7bUDOb94K5qMUtDbSX3k+020hl2bA3gg=="/>
+  <contextParameter xmi:id="_pAETg6r4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Port" prompt="Local_Postgres_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_pAEThKr4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Schema" prompt="Local_Postgres_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="public"/>
+  <contextParameter xmi:id="_pAEThar4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Login" prompt="Local_Postgres_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_pAEThqr4Ee-1dN3Aj2aLKA" comment="" name="Local_Postgres_Server" prompt="Local_Postgres_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost"/>
+</talendfile:ContextType>

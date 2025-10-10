@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard" framework="">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:6D8GeijJ6a6CzyyZ0X8Xg4jnXjDRZv4B1ouyi/sg1WPEStedjH9RNCFZ"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:/OSXlfo87LK/qnY6xSjg1VQQXLa4w1Os7kpyfwoLVDx2Rm4PTIfiCtQv"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:x8UHzwjhnqqkIjfYHsFLQ2pCxh9IHi5Bmv3l2BGvJYioRGTsEg4y"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="10.123.150.35"/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftp_dstg"/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="22"/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftpdatastage2"/>
+    <contextParameter comment="" name="recipient" prompt="recipient?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="na"/>
+    <contextParameter comment="" name="attn" prompt="attn?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="mark.adayo@novare.com.hk"/>
+    <contextParameter comment="" name="e_bcc_recipient" prompt="e_bcc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_cc_recipient" prompt="e_cc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_message" prompt="e_message?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_password" prompt="e_password?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="e_sender" prompt="e_sender?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_host" prompt="e_smtp_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_port" prompt="e_smtp_port?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_subject" prompt="e_subject?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_to_recipient" prompt="e_to_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_username" prompt="e_username?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_error_description" prompt="m_error_description?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_job_name" prompt="m_job_name?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_log_file" prompt="m_log_file?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_ref_id" prompt="m_ref_id?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_severity" prompt="m_severity?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_source_host" prompt="m_source_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_target_host" prompt="m_target_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_localDir" prompt="p_localDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="p_ftpDir" prompt="p_ftpDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:trw3qxVx0XEYDU+jv3QoC6tqHLLyRQEnDHWdJ9kd12QWpjpDPssEzBzV"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:68sI/3WeAX6fd2gg/IWDF9G+hrNGdXLdHoJ0YLo5JQ1ICqadhFgpmP+n"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:60ESr2q8BWXihenFoQ8ddu10Xee2kqga2EPDKFOcU2/4hdX8T+5N"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="recipient" prompt="recipient?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="attn" prompt="attn?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="e_bcc_recipient" prompt="e_bcc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_cc_recipient" prompt="e_cc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_message" prompt="e_message?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_password" prompt="e_password?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="e_sender" prompt="e_sender?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_host" prompt="e_smtp_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_port" prompt="e_smtp_port?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_subject" prompt="e_subject?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_to_recipient" prompt="e_to_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_username" prompt="e_username?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_error_description" prompt="m_error_description?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_job_name" prompt="m_job_name?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_log_file" prompt="m_log_file?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_ref_id" prompt="m_ref_id?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_severity" prompt="m_severity?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_source_host" prompt="m_source_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_target_host" prompt="m_target_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_localDir" prompt="p_localDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="p_ftpDir" prompt="p_ftpDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="TEST">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:AWhAmuSr0WxZ9aE+RNjOQwtLDHG1hh6di1KHGFz5w/Pd9vvdWd8Y4rmj"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:KrnF5cfgooTkwYc5MpHziyiTM+17EZWfk/Ea6bLz/kMKOSnqWqx5xWLh"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:XdSySkwakBPaOGrffbcd5K6t2WPpryHWoV5D6uC4FWwUpg/lNTn1"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="recipient" prompt="recipient?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="attn" prompt="attn?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="e_bcc_recipient" prompt="e_bcc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_cc_recipient" prompt="e_cc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_message" prompt="e_message?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_password" prompt="e_password?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="e_sender" prompt="e_sender?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_host" prompt="e_smtp_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_smtp_port" prompt="e_smtp_port?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_subject" prompt="e_subject?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_to_recipient" prompt="e_to_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_username" prompt="e_username?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_error_description" prompt="m_error_description?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_job_name" prompt="m_job_name?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_log_file" prompt="m_log_file?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_ref_id" prompt="m_ref_id?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_severity" prompt="m_severity?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_source_host" prompt="m_source_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="m_target_host" prompt="m_target_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_localDir" prompt="p_localDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+    <contextParameter comment="" name="p_ftpDir" prompt="p_ftpDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:26y2fdtBIpWEo6uPUjxIFHjLY//k4Ty/RbhxXFjCZIzBt2CSIDJdRABl"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:ZwmwAykOntG5pturuleg6UzsZdSiHTZv9SU219nXS69gD6/ofFgG1VhP"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:gN8saLj4co+dyPxLSr0GO5AGLo55UGG+u9iiFTNjc3XzrHgJ36Iz"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="10.123.150.35"/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftp_dstg"/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="22"/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftpdatastage2"/>
+    <contextParameter comment="" name="recipient" prompt="recipient?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="na"/>
+    <contextParameter comment="" name="attn" prompt="attn?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="mark.adayo@novare.com.hk"/>
+    <contextParameter comment="" name="e_to_recipient" prompt="e_to_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;4808c237.PLDT365.onmicrosoft.com@apac.teams.ms&quot;"/>
+    <contextParameter comment="" name="e_cc_recipient" prompt="e_cc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_bcc_recipient" prompt="e_bcc_recipient?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="e_sender" prompt="e_sender?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;edm820@gmail.com&quot;"/>
+    <contextParameter comment="" name="e_subject" prompt="e_subject?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;INTEGRATION ALERT&quot;"/>
+    <contextParameter comment="" name="e_message" prompt="e_message?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="e_smtp_host" prompt="e_smtp_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;smtp.gmail.com&quot;"/>
+    <contextParameter comment="" name="e_smtp_port" prompt="e_smtp_port?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;465&quot;"/>
+    <contextParameter comment="" name="e_username" prompt="e_username?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;edm820@gmail.com&quot;"/>
+    <contextParameter comment="" name="e_password" prompt="e_password?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value="enc:system.encryption.key.v1:xOzqHbKBVx7qEKqPxcIqJCWkA4fsSX7tIMWOrEdu+KRGPoWGdiZc"/>
+    <contextParameter comment="" name="m_job_name" prompt="m_job_name?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;Job 1&quot;"/>
+    <contextParameter comment="" name="m_severity" prompt="m_severity?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;1&quot;"/>
+    <contextParameter comment="" name="m_error_description" prompt="m_error_description?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;Error 1&quot;"/>
+    <contextParameter comment="" name="m_source_host" prompt="m_source_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;10.0.0.1&quot;"/>
+    <contextParameter comment="" name="m_target_host" prompt="m_target_host?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;10.0.0.2&quot;"/>
+    <contextParameter comment="" name="m_log_file" prompt="m_log_file?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;/talend/logs&quot;"/>
+    <contextParameter comment="" name="m_ref_id" prompt="m_ref_id?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;REF123456789&quot;"/>
+    <contextParameter comment="" name="p_localDir" prompt="p_localDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value="/data/sms_alert/"/>
+    <contextParameter comment="" name="p_ftpDir" prompt="p_ftpDir?" promptNeeded="false" repositoryContextId="_jGP9YHlMEeqzxcGOIryskQ" type="id_String" value="/idmpdata04/COLLECTANDTRANSFER/IN/sku/alerts/sms_alert/"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:gfnAFayq9AwtF6grIz7GkjNFlRHZrd4OevXeH//r" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/Gamer PC/Desktop/SMART Files/smart_sprint1_dev/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_85jh0FkrEequp-Kd2fqDuA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_AMC_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_AMC_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.connection_mysql_AMC_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kCvIzdl6F5T8HSDX8NP65AAKDL7pZifagaL3AeHTHOTwzIMwBtnOiEdPTuZ1rP3DS+0ywL5WnKIcRd5mC00X5+k="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowmetercatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_LeIKEGyqEequxvlWrddKAA" name="DQTechnical"/>
+    <routinesParameter id="_LV2X0GyqEequxvlWrddKAA" name="DataMasking"/>
+    <routinesParameter id="_LfPkYGyqEequxvlWrddKAA" name="DataOperation"/>
+    <routinesParameter id="_Lb1EAGyqEequxvlWrddKAA" name="DataQualityDependencies"/>
+    <routinesParameter id="_LaXEYGyqEequxvlWrddKAA" name="DataQuality"/>
+    <routinesParameter id="_LdDMAGyqEequxvlWrddKAA" name="DqStringHandling"/>
+    <routinesParameter id="_LpFc4GyqEequxvlWrddKAA" name="MDM"/>
+    <routinesParameter id="_LgW-sGyqEequxvlWrddKAA" name="Mathematical"/>
+    <routinesParameter id="_LhWdMGyqEequxvlWrddKAA" name="Numeric"/>
+    <routinesParameter id="_Lid3gGyqEequxvlWrddKAA" name="Relational"/>
+    <routinesParameter id="_LqGwkGyqEequxvlWrddKAA" name="SQLike"/>
+    <routinesParameter id="_LjhncGyqEequxvlWrddKAA" name="StringHandling"/>
+    <routinesParameter id="_LkqP4GyqEequxvlWrddKAA" name="TalendDataGenerator"/>
+    <routinesParameter id="_Ll2isGyqEequxvlWrddKAA" name="TalendDate"/>
+    <routinesParameter id="_Ln-CkGyqEequxvlWrddKAA" name="TalendStringUtil"/>
+    <routinesParameter id="_Lm99AGyqEequxvlWrddKAA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_jkk4YGK0Eeq7L_MR7-DVoQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_talend_mgmt_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_talend_mgmt_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_talend_mgmt_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_talend_mgmt_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_talend_mgmt_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3ipZcZCeI3G1Q1HAyifZ3ziIB0e1NZ9avZWMcrD2OrydkQNi8E2o5Z+s0jSPCLLRFq+RGaiQkt7vuHQmZiOy8t1zexIpcXp87A=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MYSQL_TALEND_MGMT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.126.7.236&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_sftp_1OCS_port"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="22" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_sftp_1OCS_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RDIRZM7HwqbLFveAdIot7i5k9XldOzeFsIMO4qBtE2ZUaIUO6vD3az6eKgVHMbo56hjYJKH70Y6WvKmv6oVYJwk="/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:6EDNg7FJTFyKt+EnCbk/S2oqoGZ7vLWTjeTNdezA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:mbFq/jBJ9jGZPTNdgEXG4GhRIKXlieUpw9udq33r" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:pKG6cVlvga6UTRQC/eQzfSaye045iivYxr1U/mqy" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SFTP_SOURCE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="true"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER" value="&quot;kex&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1,curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;server_host_key&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,rsa-sha2-512,rsa-sha2-256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+    </elementParameter>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Talend_Mgmt DB Connect Error&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="100"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;1OCS FTP Connect Error&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="200"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="false"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="ConnectionFailureNotification" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ConnectionFailureNotification_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="ConnectionFailureNotification"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="ConnectionFailureNotification_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="ConnectionFailureNotification_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MySQL Connection"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SFTP Connection"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="128;255;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

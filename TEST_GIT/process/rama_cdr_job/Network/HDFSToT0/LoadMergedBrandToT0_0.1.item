@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:l6VNDcETT7mJaaWWJ1gRrEriN5xtBHMYBhxE7OV9jGlbSkkBTAlE2MSy"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8082"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8080"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:50090"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="hadoop_SMART_JobHistory" prompt="hadoop_SMART_JobHistory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-3-r3.datahub.intra.smart:10020"/>
+    <contextParameter comment="" name="hadoop_SMART_NameNodeUri" prompt="hadoop_SMART_NameNodeUri?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs://datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManager" prompt="hadoop_SMART_ResourceManager?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8032"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManagerScheduler" prompt="hadoop_SMART_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_spark_debug_maxToStringFields" prompt="hadoop_SMART_spark_debug_maxToStringFields?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="600"/>
+    <contextParameter comment="" name="hadoop_SMART_StagingDirectory" prompt="hadoop_SMART_StagingDirectory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="/user"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8050"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8141"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="yarn-cluster"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="rm1,rm2"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsFileSeparator" prompt="HDFS_SMART_HdfsFileSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsRowSeparator" prompt="HDFS_SMART_HdfsRowSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsUser" prompt="HDFS_SMART_HdfsUser?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="p_hiveT0MergedBrandLocn" prompt="p_hiveT0MergedBrandLocn?" promptNeeded="false" type="id_String" value="/talend_dev/data/hive/abdr_dev/merged_brand" internalId="_-3vwADuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Port" prompt="connection_hive_ABDR_Port?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Password" prompt="connection_hive_ABDR_Password?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_Password" value="enc:system.encryption.key.v1:RqaXSoVMXG7ajXRDRKMhyRzVaChXXOQ9nkx6hO3vyEnarU8SC7K0"/>
+    <contextParameter comment="" name="connection_hive_ABDR_hiveAdditionalJDBCParameters" prompt="connection_hive_ABDR_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_ABDR_Login" prompt="connection_hive_ABDR_Login?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="connection_hive_ABDR_tez_queue_name" prompt="connection_hive_ABDR_tez_queue_name?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Server" prompt="connection_hive_ABDR_Server?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Database" prompt="connection_hive_ABDR_Database?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="abdr_dev"/>
+    <contextParameter comment="" name="p_mergedBrandHDFSDir" prompt="p_mergedBrandHDFSDir?" promptNeeded="false" type="id_String" value="/data/fa/consumer/merged_brand" internalId="_-3vwATuIEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="TEST">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:ssvf9I5HQnN4H4LJgr5zXU1n2Vx7bM/TlXAWLZ/lKmz8/BSMBGABZlnp"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8082"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8080"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:50090"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="hadoop_SMART_JobHistory" prompt="hadoop_SMART_JobHistory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-3-r3.datahub.intra.smart:10020"/>
+    <contextParameter comment="" name="hadoop_SMART_NameNodeUri" prompt="hadoop_SMART_NameNodeUri?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs://datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManager" prompt="hadoop_SMART_ResourceManager?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8032"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManagerScheduler" prompt="hadoop_SMART_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_spark_debug_maxToStringFields" prompt="hadoop_SMART_spark_debug_maxToStringFields?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="600"/>
+    <contextParameter comment="" name="hadoop_SMART_StagingDirectory" prompt="hadoop_SMART_StagingDirectory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="/user"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8050"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8141"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="yarn-cluster"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="rm1,rm2"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsFileSeparator" prompt="HDFS_SMART_HdfsFileSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsRowSeparator" prompt="HDFS_SMART_HdfsRowSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsUser" prompt="HDFS_SMART_HdfsUser?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="p_hiveT0MergedBrandLocn" prompt="p_hiveT0MergedBrandLocn?" promptNeeded="false" type="id_String" value="/talend_dev/data/hive/abdr_dev/merged_brand" internalId="_-3vwAjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Port" prompt="connection_hive_ABDR_Port?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Password" prompt="connection_hive_ABDR_Password?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_Password" value="enc:system.encryption.key.v1:QrlZXf7MjdwXBFihAgu2oOGvB8VGBS6jCcH1PXQmG6t1tB+hTToc"/>
+    <contextParameter comment="" name="connection_hive_ABDR_hiveAdditionalJDBCParameters" prompt="connection_hive_ABDR_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_ABDR_Login" prompt="connection_hive_ABDR_Login?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="connection_hive_ABDR_tez_queue_name" prompt="connection_hive_ABDR_tez_queue_name?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Server" prompt="connection_hive_ABDR_Server?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Database" prompt="connection_hive_ABDR_Database?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="abdr_dev"/>
+    <contextParameter comment="" name="p_mergedBrandHDFSDir" prompt="p_mergedBrandHDFSDir?" promptNeeded="false" type="id_String" value="/data/fa/consumer/merged_brand" internalId="_-3vwAzuIEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:WBvwMYdccVzV4j+TkK2pWTN9v5itn7O6XFqZIoikgE69cpkkQqpyP2dS"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8082"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8080"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="datahubhdp-isilon.intra.smart:50090"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="hadoop_SMART_JobHistory" prompt="hadoop_SMART_JobHistory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-3-r3.datahub.intra.smart:10020"/>
+    <contextParameter comment="" name="hadoop_SMART_NameNodeUri" prompt="hadoop_SMART_NameNodeUri?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="hdfs://datahubhdp-isilon.intra.smart:8020"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManager" prompt="hadoop_SMART_ResourceManager?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8032"/>
+    <contextParameter comment="" name="hadoop_SMART_ResourceManagerScheduler" prompt="hadoop_SMART_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_spark_debug_maxToStringFields" prompt="hadoop_SMART_spark_debug_maxToStringFields?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="600"/>
+    <contextParameter comment="" name="hadoop_SMART_StagingDirectory" prompt="hadoop_SMART_StagingDirectory?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="/user"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8050"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8141"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="yarn-cluster"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="true"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="rm1,rm2"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8030"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8088"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-2-r1.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-6-r5.datahub.intra.smart:8090"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" repositoryContextId="_XAnfkGpqEeqq_PQ5y_lmKQ" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsFileSeparator" prompt="HDFS_SMART_HdfsFileSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;;&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsRowSeparator" prompt="HDFS_SMART_HdfsRowSeparator?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="HDFS_SMART_HdfsUser" prompt="HDFS_SMART_HdfsUser?" promptNeeded="false" repositoryContextId="_7ry1QGkxEeqXVKZZAvjNlg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="p_hiveT0MergedBrandLocn" prompt="p_hiveT0MergedBrandLocn?" promptNeeded="false" type="id_String" value="/talend_prod/data/hive/abdr/merged_brand" internalId="_-3vwBDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Port" prompt="connection_hive_ABDR_Port?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Password" prompt="connection_hive_ABDR_Password?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_Password" value="enc:system.encryption.key.v1:yKOlFu6OP9RHWgO0Hgygk8G4YbmwMpqsMilxISLLb4LYGgAPxVYP"/>
+    <contextParameter comment="" name="connection_hive_ABDR_hiveAdditionalJDBCParameters" prompt="connection_hive_ABDR_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_ABDR_Login" prompt="connection_hive_ABDR_Login?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_ABDR_tez_queue_name" prompt="connection_hive_ABDR_tez_queue_name?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="talend_prod"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Server" prompt="connection_hive_ABDR_Server?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_hive_ABDR_Database" prompt="connection_hive_ABDR_Database?" promptNeeded="false" repositoryContextId="_Li9XsKY6Eeq-45Re_Tka8w" type="id_String" value="abdr"/>
+    <contextParameter comment="" name="p_mergedBrandHDFSDir" prompt="p_mergedBrandHDFSDir?" promptNeeded="false" type="id_String" value="/data/fa/consumer/merged_brand" internalId="_-3vwBTuIEfCBRaXGkSs2dw"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:oHFs0NhwfcT96m4l/1rPjmUFVZheZ93ii2r3cTJl" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mariel.montebon/Documents/workspaces/SmartETL_Git/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_85jh0FkrEequp-Kd2fqDuA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_AMC_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_AMC_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.connection_mysql_AMC_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ToyAdk63810Vnte5ds4MrOg1ZrOzKjCdENkmiJo3xtfRsh8qRoKvq0jC1kGfp74BGB3OQrM2x7/4JwKndEyBCGA="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowmetercatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_9QoScJnAEeqmXJHqUJk9gQ" name="DQTechnical"/>
+    <routinesParameter id="_9OxRQJnAEeqmXJHqUJk9gQ" name="DataMasking"/>
+    <routinesParameter id="_9Q70cJnAEeqmXJHqUJk9gQ" name="DataOperation"/>
+    <routinesParameter id="_9QKYYJnAEeqmXJHqUJk9gQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_9P6gwJnAEeqmXJHqUJk9gQ" name="DataQuality"/>
+    <routinesParameter id="_9QcFMJnAEeqmXJHqUJk9gQ" name="DqStringHandling"/>
+    <routinesParameter id="_9Oe9YJnAEeqmXJHqUJk9gQ" name="MDM"/>
+    <routinesParameter id="_9ROvYJnAEeqmXJHqUJk9gQ" name="Mathematical"/>
+    <routinesParameter id="_9RjfgJnAEeqmXJHqUJk9gQ" name="Numeric"/>
+    <routinesParameter id="_9Rw64JnAEeqmXJHqUJk9gQ" name="Relational"/>
+    <routinesParameter id="_9TupwJnAEeqmXJHqUJk9gQ" name="SQLike"/>
+    <routinesParameter id="_9R-WQJnAEeqmXJHqUJk9gQ" name="StringHandling"/>
+    <routinesParameter id="_9SU7kJnAEeqmXJHqUJk9gQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_9SsH8JnAEeqmXJHqUJk9gQ" name="TalendDate"/>
+    <routinesParameter id="_9TeyIJnAEeqmXJHqUJk9gQ" name="TalendStringUtil"/>
+    <routinesParameter id="_9TFJgJnAEeqmXJHqUJk9gQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="GetAvroMergedBrandForHive"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="DEV"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_gQRXULGKEeqZU5Pu3vTbLw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="p_avroDir"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;AVRO_DIR&quot;))"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="p_hiveT0MergedBrandPartLocn"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="((String)globalMap.get(&quot;AVRO_PARTN_LOCN&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rGY-sKY5Eeq-45Re_Tka8w" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="HDP_3_1_4_12_1"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_hive_ABDR_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_hive_ABDR_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_hive_ABDR_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_hive_ABDR_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vcUHRoislnwShIjbueWUVwqiqQXiViz2Us0I+iFD5GrxnhgHHPNfb6d2eG8j966JI1netsvqzF8VnOzLZBI9ONw="/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="context.connection_hive_ABDR_hiveAdditionalJDBCParameters"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:AZHlWPzRR0cwarzneFYc6Jn76nQLCatYbCbaeXFv" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:TTQ5kLWYZ9YjODErl/7MMNWUorl9hK+mzsatS2CG" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:Eijizbg6kCQ3IW7XiagefnIdnFgOwqRolnNiAKIl" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:jxZcqgJA5qFpG5QVsBNKnkkrauL5R1EKdS2eRXez" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:CqYojBKkF/OAcPsXXoRFQ+loWOnJVA+7P/yNk2IV" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;HIVE_ABDR_CONN&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" value="tez" show="false"/>
+    <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_MASTER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_REGIONSERVER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" value="false" show="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" value="When filling in the Jar path information below, make sure that the JAR files are available on the server." show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:Xgo3UULf2V3MBG/aRaeIj/VKicoBDXiCx++PcGWY" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TEZ_LIB" value="INSTALL" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|HIVE_VERSION}&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEZ_JARS_NAME" value="avro-1.5.4.jar,commons-cli-1.2.jar,commons-collections4-4.0.jar,guava-11.0.2.jar,guice-3.0.jar,hadoop-mapreduce-client-common-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-core-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-shuffle-2.4.0.2.1.1.0-385.jar,jettison-1.3.4.jar,protobuf-java-2.5.0.jar,snappy-java-1.0.4.1.jar,tez-api-0.4.0.2.1.1.0-385.jar,tez-common-0.4.0.2.1.1.0-385.jar,tez-dag-0.4.0.2.1.1.0-385.jar,tez-mapreduce-0.4.0.2.1.1.0-385.jar,tez-mapreduce-examples-0.4.0.2.1.1.0-385.jar,tez-runtime-internals-0.4.0.2.1.1.0-385.jar,tez-runtime-library-0.4.0.2.1.1.0-385.jar,tez-tests-0.4.0.2.1.1.0-385.jar,commons-lang3-3.0.jar" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="TEZ_LIB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TEZ_LIB_NAME" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;tez.queue.name&quot;"/>
+      <elementValue elementRef="VALUE" value="context.connection_hive_ABDR_tez_queue_name"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;tez.queue.name&quot;"/>
+      <elementValue elementRef="VALUE" value="context.connection_hive_ABDR_tez_queue_name"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="connection_hive_ABDR"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error connecting to T0 Hive&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tSQLScriptParser" componentVersion="1.6" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSQLScriptParser_1" show="false"/>
+    <elementParameter field="CHECK" name="READ_FROM_FILE" value="false"/>
+    <elementParameter field="FILE" name="SCRIPT_FILE" value="&quot;/path/to/myscript.sql&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILE_ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="MEMO_SQL" name="SQL_SCRIPT" value="&quot;&#xD;&#xA;ALTER TABLE &quot; + context.connection_hive_ABDR_Database + &quot;.merged_brand &#xD;&#xA;&#x9;add partition (date='&quot; + ((String)globalMap.get(&quot;AVRO_LOCN_DATE&quot;)) + &quot;') &#xD;&#xA;&#x9;location '&quot; + ((String)globalMap.get(&quot;AVRO_PARTN_LOCN&quot;)) + &quot;'&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="REMOVE_COMMENTS" value="false"/>
+    <elementParameter field="CHECK" name="USE_SCRIPT_DETECTING" value="true"/>
+    <elementParameter field="CHECK" name="DETECTING_BIND_VARIABLES" value="true"/>
+    <elementParameter field="LABEL" name="RELEASE_LABEL_20190725" value="Release: 1.6 build at: 20190725"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Executing SQL: &quot; + ((String)globalMap.get(&quot;tSQLScriptParser_1_STATEMENT_SQL&quot;)) );"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tHiveRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveRow_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="EMBEDDED" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hjZFPhS8zvptB6RHEbn5z2lKoUK0wMzxkiwyqZGe" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;hiveServer2User@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;jdbc:mysql://&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:FAfjGWRk51zsHSeRCYdg7tAhVlWQk7DSi6xs/GzuqzM+7w==" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hive.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:foAn9lKDd3hfaJ5CQYnB7+YYAZ5slphh625hM2Qz" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:VgNqgXq9h5BdzlBJ4uahieE20CQr1QdbIFZJMwU+GJ1RJyY7qBU=" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:50300&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="true" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="true" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" value="mr" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:HgWHcui5nEJxXW7ybwgZ/uW+CnfPQqHNTOqnfmWW" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:tuc0DoqwOnd7+WQHSIwcrDXb6dD1Ebk28+OuvDJ5" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:MCbra+pNZQFP3Pw8SktYA6BNDkQN5umwxCoJ+geF" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
+    <elementParameter field="CHECK" name="USE_PARQUET" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="((String)globalMap.get(&quot;tSQLScriptParser_1_STATEMENT_SQL&quot;))"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_MASTER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_REGIONSERVER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" value="false" show="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" value="When filling in the Jar path information below, make sure that the JAR files are available on the server." show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TEZ_LIB" value="INSTALL" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|HIVE_VERSION}&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEZ_JARS_NAME" value="avro-1.5.4.jar,commons-cli-1.2.jar,commons-collections4-4.0.jar,guava-11.0.2.jar,guice-3.0.jar,hadoop-mapreduce-client-common-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-core-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-shuffle-2.4.0.2.1.1.0-385.jar,jettison-1.3.4.jar,protobuf-java-2.5.0.jar,snappy-java-1.0.4.1.jar,tez-api-0.4.0.2.1.1.0-385.jar,tez-common-0.4.0.2.1.1.0-385.jar,tez-dag-0.4.0.2.1.1.0-385.jar,tez-mapreduce-0.4.0.2.1.1.0-385.jar,tez-mapreduce-examples-0.4.0.2.1.1.0-385.jar,tez-runtime-internals-0.4.0.2.1.1.0-385.jar,tez-runtime-library-0.4.0.2.1.1.0-385.jar,tez-tests-0.4.0.2.1.1.0-385.jar,commons-lang3-3.0.jar" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="TEZ_LIB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TEZ_LIB_NAME" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in."/>
+    <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="Data" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+    <metadata connector="FLOW" name="tHiveRow_1">
+      <column comment="" key="false" length="-1" name="Data" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Data" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Completed query:\n&quot; + ((String)globalMap.get(&quot;tHiveRow_1_QUERY&quot;)) );&#xA;System.out.println(&quot;Message:\n&quot; + (null == globalMap.get(&quot;tHiveRow_1_ERROR_MESSAGE&quot;) ? &quot;&quot; : (String)globalMap.get(&quot;tHiveRow_1_ERROR_MESSAGE&quot;)) );&#xA;&#xA;System.out.println(&quot;Loaded file count: &quot; + ((Integer)globalMap.get(&quot;tHDFSList_1_NB_FILE&quot;)) );&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2">
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHDFSList" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSList_1" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHDFSConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:9000/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" value="&quot;adl://account.azuredatalakestore.net&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" value="&quot;XXXX&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" value="enc:system.encryption.key.v1:p/t+LXHC73ucOtQ8pmEmz/GGDOcKuTNPAWfF0qTQNY7cMIlJLIxK7Bw8ZN+Gor4S8CuF3AO4OJvXkR+roCNFqMKueOTjLxR2NnM8fckRm1o=" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" value="enc:system.encryption.key.v1:c21JswmScFPn5CKYMQtqXxjWgF0cn+JJHIHU5l2bcquUJw==" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:UXZ3EDZVeLr8H9bSjlC8JvDo8AYbn72ciLolHtcx" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="DIRECTORY" value="context.p_mergedBrandHDFSDir + &quot;/date=&quot; + ((String)globalMap.get(&quot;AVRO_LOCN_DATE&quot;))"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;part-*.avro&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="true"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AvroHDFSDir"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tHDFSList_1_CURRENT_FILEDIRECTORY&quot;)).substring(  ((String)globalMap.get(&quot;tHDFSList_1_CURRENT_FILEDIRECTORY&quot;)).indexOf(context.p_mergedBrandHDFSDir) )     "/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="AvroHDFSDir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;AVRO_DIR&quot;"/>
+      <elementValue elementRef="VALUE" value="MergedBrandDir.AvroHDFSDir"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2">
+      <column comment="" key="false" length="-1" name="AvroHDFSDir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;AVRO_LOCN_DATE&quot;"/>
+      <elementValue elementRef="VALUE" value=" TalendDate.getDate(&quot;CCYYMMDD&quot;)"/>
+      <elementValue elementRef="KEY" value="&quot;AVRO_PARTN_LOCN&quot;"/>
+      <elementValue elementRef="VALUE" value="context.p_hiveT0MergedBrandLocn + &quot;/date=&quot; + ((String)globalMap.get(&quot;AVRO_LOCN_DATE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ojCz8F3GEeqMqrevbkBX6Q" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_3_1_4_12_1"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="context.hadoop_SMART_NameNodeUri"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.HDFS_SMART_HdfsUser"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:AtmtOmM/TwdkMRrAKW9f48JiXM32Ko81FzNf0WLa" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.http-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_http_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.https-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_https_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.rpc-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_rpc_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.secondary.http-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_secondary_http_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.permissions.enabled&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_permissions_enabled"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.permissions.superusergroup&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_permissions_superusergroup"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.registry.zk.quorum&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_hadoop_registry_zk_quorum"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.client.failover-proxy-provider&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_client_failover_proxy_provider"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.log.server.url&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_log_server_url"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.log.server.web-service.url&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_log_server_web_service_url"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.admin.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_admin_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.cluster-id&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_cluster_id"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.ha.enabled&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_ha_enabled"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.ha.rm-ids&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_ha_rm_ids"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.scheduler.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_scheduler_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.zk-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_zk_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.proxyuser.yarn.hosts&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_hadoop_proxyuser_yarn_hosts"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" value="&quot;adl://account.azuredatalakestore.net&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" value="&quot;XXXX&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" value="enc:system.encryption.key.v1:IovgnAhoim3aZ2+0fGCTMBT/ZEPkFFPW7xQAC4G6878ZclnSLJgrWXwCeFxQqkRm389MbG6y3Eud5B4gRMS6y1XbBCFHQbJFsFRA8PZHzy8=" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" value="enc:system.encryption.key.v1:H6pUGGz+5qik5/QRLKLk8GcIXtmJdsf4GyJ159Sj9jtOJw==" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error connecting to HDFS&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Converting Avro files to Parquet for Dir: &quot; + (String)globalMap.get(&quot;AVRO_DIR&quot;) );"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tHDFSExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSExist_1" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HDFS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHDFSConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:9000/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" value="&quot;adl://account.azuredatalakestore.net&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" value="&quot;XXXX&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" value="enc:system.encryption.key.v1:eHh5oL7F1DSzhGu1ekTsRI4wTFGxxirWOuaZJSmOuiRqWhevTYNPMJFa0Ua1vFas90Ig/+gz2xzPI/HkeR14NniBQUT2D0H3trLbBxxxliI=" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" value="enc:system.encryption.key.v1:aOGAae1rU9xde0CtJIimOhacbxgSlQ20ZBvjYgrS83V/aQ==" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:mOy6J1T94CdCZmKjhjLYeJVff5468Kk2trPvM8Bv" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="HDFSDIR" value="context.p_mergedBrandHDFSDir "/>
+    <elementParameter field="TEXT" name="FILENAME" value=" &quot;date=&quot; + ((String)globalMap.get(&quot;AVRO_LOCN_DATE&quot;))"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+    <metadata connector="FLOW" name="tHDFSExist_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Exiting.  Data Folder does not exist: &quot; + context.p_mergedBrandHDFSDir  +  &quot;date=&quot; + ((String)globalMap.get(&quot;AVRO_LOCN_DATE&quot;)) );"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AvroHDFSDir"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="AvroHDFSDir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tSQLScriptParser_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHiveConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_1" target="tSetGlobalVar_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSQLScriptParser_1" offsetLabelX="0" offsetLabelY="0" source="tSQLScriptParser_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tHiveRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHiveRow_1" offsetLabelX="0" offsetLabelY="0" source="tHiveRow_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tHDFSList_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSList_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tHDFSList_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSList_1" target="tJava_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value=" null != globalMap.get(&quot;AVRO_DIR&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="MergedBrandDir" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tSetGlobalVar_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MergedBrandDir" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tHDFSExist_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tHDFSConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_1" target="tHiveConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="FolderExists" lineStyle="6" metaname="tHDFSExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tHDFSExist_1" target="tHDFSList_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tHDFSExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="FolderExists" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tHDFSExist_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tHDFSExist_1" target="tJava_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value=" ! ((Boolean)globalMap.get(&quot;tHDFSExist_1_EXISTS&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET MERGEDBRAND FOR HIVE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CONNECT T0"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ERROR"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSQLScriptParser_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="T0 ADD PARTITION"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="PRINT"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveRow_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOAD TO HIVE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MESSAGE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSList_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET FULL HDFS DIR FOR DATE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SET VARS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CONNECT HDFS"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ERROR"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MSG"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSExist_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DT DIR?"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MSG"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

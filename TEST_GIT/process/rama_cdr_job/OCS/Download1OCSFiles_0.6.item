@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard" framework="">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="p_1OCSRemoteDir" prompt="p_1OCSRemoteDir?" promptNeeded="false" type="id_String" value="/downloads/normal/cdr/bulk/adj/20210401" internalId="_C49isDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_1OCSLocalDir" prompt="p_1OCSLocalDir?" promptNeeded="false" type="id_String" value="/Talend/downloads/adj" internalId="_C49isTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_deleteRemoteFileAfterDownload" prompt="p_deleteRemoteFileAfterDownload?" promptNeeded="false" type="id_Boolean" value="false" internalId="_C49isjuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_OCSSubTypeFilter" prompt="p_OCSSubTypeFilter?" promptNeeded="false" type="id_String" value="cbs_cdr_adj*.add" internalId="_C49iszuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_T0_Database" prompt="connection_hive_T0_Database?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="smart_dev"/>
+    <contextParameter comment="" name="connection_hive_T0_hiveAdditionalJDBCParameters" prompt="connection_hive_T0_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_T0_HiveMetastorePort" prompt="connection_hive_T0_HiveMetastorePort?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="9083"/>
+    <contextParameter comment="" name="connection_hive_T0_Login" prompt="connection_hive_T0_Login?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="tlndusr_dev"/>
+    <contextParameter comment="" name="connection_hive_T0_Password" prompt="connection_hive_T0_Password?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_Password" value="enc:system.encryption.key.v1:FYE77z47d0dE2+W0/e767Cmki83ohK0tmGA0sR1hh0NDktCY33zV"/>
+    <contextParameter comment="" name="connection_hive_T0_Port" prompt="connection_hive_T0_Port?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_T0_Server" prompt="connection_hive_T0_Server?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:4MmjRdX688xO1ssbxcg9CscV0xVktCfPBZhTe2hA6VW8wDgmBT7BARqc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:/O/AmipPfloWEJdi/UPNGdbkg8Hxyjr3J9aWFwVSnXPjAt4tnIztCaKg"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.9.85"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:0VH/4puR0q9yG2ZBYg6D29a2cZkw0VpLeY3JrTKLafNM54Zn6sba"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="SMTPHost" prompt="SMTPHost?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;10.124.1.172&quot;"/>
+    <contextParameter comment="" name="SMTPPassword" prompt="SMTPPassword?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="SMTPPort" prompt="SMTPPort?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;25&quot;"/>
+    <contextParameter comment="" name="SMTPUser" prompt="SMTPUser?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_TACTaskNo" prompt="p_TACTaskNo?" promptNeeded="false" type="id_String" value="task_nn" internalId="_C49itDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_TACLogDir" prompt="p_TACLogDir?" promptNeeded="false" type="id_String" value="/Talend/tac/generatedLogs" internalId="_C49itTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="10.123.150.35"/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_Password" value="enc:system.encryption.key.v1:I2ca/UB15QDxWds//g7C/vrI6jK83AmqkYC6yqv3Ov3J4PVFi9gGXYM="/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="22"/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftp_dstg"/>
+    <contextParameter comment="" name="p_localSMSDir" prompt="p_localSMSDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/Talend/alerts/sms"/>
+    <contextParameter comment="" name="p_remoteSMSFTPDir" prompt="p_remoteSMSFTPDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/idmpdata04/COLLECTANDTRANSFER/IN/sku/alerts/sms_alert/"/>
+    <contextParameter comment="" name="p_SMSCode" prompt="p_SMSCode?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="221"/>
+    <contextParameter comment="" name="p_alert1_attn" prompt="p_alert1_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49itjuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_alert2_attn" prompt="p_alert2_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49itzuJEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="TEST">
+    <contextParameter comment="" name="p_1OCSRemoteDir" prompt="p_1OCSRemoteDir?" promptNeeded="false" type="id_String" value="/upload/normal/cdr" internalId="_C49iuDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_1OCSLocalDir" prompt="p_1OCSLocalDir?" promptNeeded="false" type="id_String" value="/home/talenduser/talend_dev/source/" internalId="_C49iuTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_deleteRemoteFileAfterDownload" prompt="p_deleteRemoteFileAfterDownload?" promptNeeded="false" type="id_Boolean" value="true" internalId="_C49iujuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_OCSSubTypeFilter" prompt="p_OCSSubTypeFilter?" promptNeeded="false" type="id_String" value="" internalId="_C49iuzuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_T0_Database" prompt="connection_hive_T0_Database?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="smart_predev"/>
+    <contextParameter comment="" name="connection_hive_T0_hiveAdditionalJDBCParameters" prompt="connection_hive_T0_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_T0_HiveMetastorePort" prompt="connection_hive_T0_HiveMetastorePort?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="9083"/>
+    <contextParameter comment="" name="connection_hive_T0_Login" prompt="connection_hive_T0_Login?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_T0_Password" prompt="connection_hive_T0_Password?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_Password" value="enc:system.encryption.key.v1:1j6G1jC9sEdweOGmsdVZURGkkhCdGttpPMVx/mZdmnOUri3BHks="/>
+    <contextParameter comment="" name="connection_hive_T0_Port" prompt="connection_hive_T0_Port?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_T0_Server" prompt="connection_hive_T0_Server?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:Knz/JCS+LaB6FPv9MHbSMeGPcUAN85RiFmX1+b8/RntxzIMj4BWNdrS7"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:F4neTOYhqH5/Ckpp785vcxOpS7mnHiKELRu5mHSYsZ6bGSeVsIk3b1OO"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:a8JwrM2y2pSBZUvZ4GWKo/24Z/XUJvmQRaJ8tumUY+8k4TE1dLAs"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="SMTPHost" prompt="SMTPHost?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;10.124.6.36&quot;"/>
+    <contextParameter comment="" name="SMTPPassword" prompt="SMTPPassword?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="SMTPPort" prompt="SMTPPort?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;25&quot;"/>
+    <contextParameter comment="" name="SMTPUser" prompt="SMTPUser?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_TACTaskNo" prompt="p_TACTaskNo?" promptNeeded="false" type="id_String" value="task_nn" internalId="_C49ivDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_TACLogDir" prompt="p_TACLogDir?" promptNeeded="false" type="id_String" value="/Talend/tac/generatedLogs" internalId="_C49ivTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_localSMSDir" prompt="p_localSMSDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/Talend/alerts/sms"/>
+    <contextParameter comment="" name="p_remoteSMSFTPDir" prompt="p_remoteSMSFTPDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/idmpdata04/COLLECTANDTRANSFER/IN/sku/alerts/sms_alert/"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="10.123.150.35"/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftp_dstg"/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="22"/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_Password" value="enc:system.encryption.key.v1:X9e1h5EOwe7PZlFMm6DeVf/EQYeZC1EaJeH0Qiv8Ia0UxhgCZObdPTc="/>
+    <contextParameter comment="" name="p_SMSCode" prompt="p_SMSCode?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="221"/>
+    <contextParameter comment="" name="p_alert1_attn" prompt="p_alert1_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49ivjuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_alert2_attn" prompt="p_alert2_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49ivzuJEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="p_1OCSRemoteDir" prompt="p_1OCSRemoteDir?" promptNeeded="false" type="id_String" value="/normal/cdr" internalId="_C49iwDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_1OCSLocalDir" prompt="p_1OCSLocalDir?" promptNeeded="false" type="id_String" value="" internalId="_C49iwTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_deleteRemoteFileAfterDownload" prompt="p_deleteRemoteFileAfterDownload?" promptNeeded="false" type="id_Boolean" value="true" internalId="_C49iwjuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_OCSSubTypeFilter" prompt="p_OCSSubTypeFilter?" promptNeeded="false" type="id_String" value="" internalId="_C49iwzuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="connection_hive_T0_Database" prompt="connection_hive_T0_Database?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="talend_t0t1"/>
+    <contextParameter comment="" name="connection_hive_T0_hiveAdditionalJDBCParameters" prompt="connection_hive_T0_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_T0_HiveMetastorePort" prompt="connection_hive_T0_HiveMetastorePort?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="9083"/>
+    <contextParameter comment="" name="connection_hive_T0_Login" prompt="connection_hive_T0_Login?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_T0_Password" prompt="connection_hive_T0_Password?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_Password" value="enc:system.encryption.key.v1:xuhGVYCX0ptBlO4EFKdepy1F5rAXNTptX4BZwRqu4zwENQBC9jc="/>
+    <contextParameter comment="" name="connection_hive_T0_Port" prompt="connection_hive_T0_Port?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_T0_Server" prompt="connection_hive_T0_Server?" promptNeeded="false" repositoryContextId="_F9gH8GraEeqHLIfHDczlYg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="connection_mysql_AMC_AdditionalParams" prompt="connection_mysql_AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Database" prompt="connection_mysql_AMC_Database?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="amc"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Login" prompt="connection_mysql_AMC_Login?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Password" prompt="connection_mysql_AMC_Password?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_Password" value="enc:system.encryption.key.v1:+zmYJtV2s1KgLNWHvHJTR7Eslmtb0GIw/BE1xg7l6wmih1dMU5WrFlif"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Port" prompt="connection_mysql_AMC_Port?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_AMC_Schema" prompt="connection_mysql_AMC_Schema?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_mysql_AMC_Server" prompt="connection_mysql_AMC_Server?" promptNeeded="false" repositoryContextId="_tTDRkFksEequp-Kd2fqDuA" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_AdditionalParams" prompt="connection_mysql_talend_mgmt_AdditionalParams?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Database" prompt="connection_mysql_talend_mgmt_Database?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talend_mgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Login" prompt="connection_mysql_talend_mgmt_Login?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="talendmgmt"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Password" prompt="connection_mysql_talend_mgmt_Password?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_Password" value="enc:system.encryption.key.v1:bm/TLpWPTl3KjrpMUdbwbYih1gEM6iOHRTx/96IVIP9ffKGiWnvY3O8G"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Port" prompt="connection_mysql_talend_mgmt_Port?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="3306"/>
+    <contextParameter comment="" name="connection_mysql_talend_mgmt_Server" prompt="connection_mysql_talend_mgmt_Server?" promptNeeded="false" repositoryContextId="_44kacGK0Eeq7L_MR7-DVoQ" type="id_String" value="10.126.10.239"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_encoding" prompt="connection_sftp_1OCS_encoding?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_host" prompt="connection_sftp_1OCS_host?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="10.126.10.237"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_passphrase_key" prompt="connection_sftp_1OCS_passphrase_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_password" prompt="connection_sftp_1OCS_password?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Password" value="enc:system.encryption.key.v1:R1Uw1i6S76T5AGskENh5zE9sO6JTHlyVI69fR3dY08NJsK1ZCwIv"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_port" prompt="connection_sftp_1OCS_port?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="connection_sftp_1OCS_private_key" prompt="connection_sftp_1OCS_private_key?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_sftp_1OCS_username" prompt="connection_sftp_1OCS_username?" promptNeeded="false" repositoryContextId="_Y6sQoFfUEeqrp_9EUuF-dQ" type="id_String" value="etl_admin"/>
+    <contextParameter comment="" name="SMTPHost" prompt="SMTPHost?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;10.110.180.55&quot;"/>
+    <contextParameter comment="" name="SMTPPassword" prompt="SMTPPassword?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_Password" value=""/>
+    <contextParameter comment="" name="SMTPPort" prompt="SMTPPort?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value="&quot;25&quot;"/>
+    <contextParameter comment="" name="SMTPUser" prompt="SMTPUser?" promptNeeded="false" repositoryContextId="_sHs6IHkoEeqoy5ek6QUorA" type="id_String" value=""/>
+    <contextParameter comment="" name="p_TACTaskNo" prompt="p_TACTaskNo?" promptNeeded="false" type="id_String" value="task_nn" internalId="_C49ixDuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_TACLogDir" prompt="p_TACLogDir?" promptNeeded="false" type="id_String" value="/Talend/tac/generatedLogs" internalId="_C49ixTuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_localSMSDir" prompt="p_localSMSDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/Talend/alerts/sms"/>
+    <contextParameter comment="" name="p_remoteSMSFTPDir" prompt="p_remoteSMSFTPDir?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="/idmpdata04/COLLECTANDTRANSFER/IN/sku/alerts/"/>
+    <contextParameter comment="" name="connection_sftp_sms_host" prompt="connection_sftp_sms_host?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="10.123.150.35"/>
+    <contextParameter comment="" name="connection_sftp_sms_username" prompt="connection_sftp_sms_username?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="ftp_dstg"/>
+    <contextParameter comment="" name="connection_sftp_sms_port" prompt="connection_sftp_sms_port?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_String" value="22"/>
+    <contextParameter comment="" name="connection_sftp_sms_password" prompt="connection_sftp_sms_password?" promptNeeded="false" repositoryContextId="_TU610HlQEeqzxcGOIryskQ" type="id_Password" value="enc:system.encryption.key.v1:Oc7TXeS2huHpZ4fH1jNtM0U9JX7Nb+SsbEaNdcGRg8Kx5+Fbcs+e8O0="/>
+    <contextParameter comment="" name="p_SMSCode" prompt="p_SMSCode?" promptNeeded="false" repositoryContextId="_SvRJMHpPEeqOGuE7nOjgvg" type="id_String" value="221"/>
+    <contextParameter comment="" name="p_alert1_attn" prompt="p_alert1_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49ixjuJEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="p_alert2_attn" prompt="p_alert2_attn?" promptNeeded="false" type="id_String" value="Mr. So and M. So" internalId="_C49ixzuJEfCBRaXGkSs2dw"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:nPyOQQVIghV01dFblVwt5VSjaauyLcNrG2CqdoVF" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/marc.almonte/Desktop/smart_workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_85jh0FkrEequp-Kd2fqDuA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_AMC_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_AMC_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.connection_mysql_AMC_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DJhO5yBj7tUOICAt01FQwLJTkfTELjxk5uJRjoVsgidGCWYwuOpB37FURMNPMh0XEgoTu9NPCY/yrP6ztch1/UA="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowmetercatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_-DosAE56EeqkYJYuyZtj-Q" name="MDM"/>
+    <routinesParameter id="_-TAkwE56EeqkYJYuyZtj-Q" name="DataMasking"/>
+    <routinesParameter id="_-TJutk56EeqkYJYuyZtj-Q" name="DataQuality"/>
+    <routinesParameter id="_-TcpoE56EeqkYJYuyZtj-Q" name="DataQualityDependencies"/>
+    <routinesParameter id="_-TmaoE56EeqkYJYuyZtj-Q" name="DqStringHandling"/>
+    <routinesParameter id="_-TwLpk56EeqkYJYuyZtj-Q" name="DQTechnical"/>
+    <routinesParameter id="_-UDGkE56EeqkYJYuyZtj-Q" name="DataOperation"/>
+    <routinesParameter id="_-UM3kE56EeqkYJYuyZtj-Q" name="Mathematical"/>
+    <routinesParameter id="_-UgZlk56EeqkYJYuyZtj-Q" name="Numeric"/>
+    <routinesParameter id="_-Uz7kE56EeqkYJYuyZtj-Q" name="Relational"/>
+    <routinesParameter id="_-U9Fhk56EeqkYJYuyZtj-Q" name="StringHandling"/>
+    <routinesParameter id="_-VQAcE56EeqkYJYuyZtj-Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_-VZxdk56EeqkYJYuyZtj-Q" name="TalendDate"/>
+    <routinesParameter id="_-VssYE56EeqkYJYuyZtj-Q" name="TalendString"/>
+    <routinesParameter id="_-WAOYE56EeqkYJYuyZtj-Q" name="TalendStringUtil"/>
+    <routinesParameter id="_-WJYUE56EeqkYJYuyZtj-Q" name="SQLike"/>
+  </parameters>
+  <node componentName="tFTPFileList" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPFileList_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;user1&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wRVR8cH5kYYCEIvReAwyFPv3WCU6KkWTigTENS5ivFVQesQ=" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:Nc9FsR4ykFW9PaxUVyMaHhvELgfiv033fDuF3kANplQHy8Kw" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:y/99QC1ZX0A3J8N3ZNldU26QIHKuInlOWKm2RhOyNKCwLcIn" show="false"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.p_1OCSRemoteDir"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="CHECK" name="DIR_FULL" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="context.p_OCSSubTypeFilter"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:Szz8L32KpLAaOiJsszRotc61XSfxCEwJyJVxMagP" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Downloading: &quot; + ((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILEPATH&quot;)) );&#xA;&#xA;&#xA;// To check for any key violations&#xA;globalMap.put(&quot;tDBOutput_2_NB_LINE&quot;, 0);&#xA;globalMap.put(&quot;tDBOutput_3_NB_LINE&quot;, 0);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPGet_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1rVCTc6qApfnTgZzniWIidKsJfXk4C5Y1Xop6yHz55XrMvQRAxQz" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:2gZqGWjD7QMZ7xLTlQklSVCRX107Ez+opAXFB/Ull/NcGtxF" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:gpU5GOm+V1ywfb+WTj2cbJRwBlgDGTvJ3KKdaPZrpGfwcopF" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.p_1OCSLocalDir"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.p_1OCSRemoteDir"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never" show="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:zfgzUx+8CCLQXrxkhhtglRlpfIhhzmpUmSfA3btI" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_MESSAGE" value="true"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPGet_1"/>
+  </node>
+  <node componentName="tFileRowCount" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileRowCount_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.p_1OCSLocalDir + &quot;/&quot; +((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="IGNORE_EMPTY_ROW" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileRowCount_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot; Number of rows in current file is : &quot; + ((Integer)globalMap.get(&quot;tFileRowCount_1_COUNT&quot;)));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;BATCH_ID&quot;"/>
+      <elementValue elementRef="VALUE" value="TalendDate.getDate(&quot;CCYYMMDD_hhmmssSSS&quot;)"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;BATCH_ID&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_rejected_yn"/>
+      <elementValue elementRef="VALUE" value="&quot;N&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false">
+      <elementValue elementRef="batch_id" value="((Integer)globalMap.get(&quot;tFileRowCount_1_COUNT&quot;))"/>
+      <elementValue elementRef="batch_rejected_yn" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="batches" name="tFixedFlowInput_1">
+      <column comment="" key="true" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'N'::bpchar'" key="false" length="1" name="batch_rejected_yn" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_postgres_Talend_Mgmt_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_postgres_Talend_Mgmt_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_postgres_Talend_Mgmt_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4s3xYpL+DqgSk9a00atgIQ21TRLBvAHKmsUgje7KsppP9BVBV/MLEj9gyTD3PxGAhMLKBNQptixitBdpA/KhkwXdClfOOOR5aYy65A==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;batches&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_rejected_yn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="batches&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_2">
+      <column comment="" key="true" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'N'::bpchar'" key="false" length="1" name="batch_rejected_yn" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'N'::bpchar'" key="false" length="1" name="batch_rejected_yn" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.p_1OCSLocalDir + &quot;/&quot; +((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="CHECK" name="MD5" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileProperties_1">
+      <column key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="32" name="md5" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z6DT0H1UEeqcHtCPVsZoFQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="pull_ftp_files" name="PullFTPFile">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="remote_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="local_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_size_bytes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_row_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="file_md5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" name="CorruptFile">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="local_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="PullFTPFile">
+        <mapperTableEntries name="batch_id" expression="((String)globalMap.get(&quot;BATCH_ID&quot;))" type="id_String"/>
+        <mapperTableEntries name="file_name" expression="DownloadFileProperties.basename " type="id_String"/>
+        <mapperTableEntries name="remote_dir" expression="context.p_1OCSRemoteDir" type="id_String"/>
+        <mapperTableEntries name="local_dir" expression="DownloadFileProperties.dirname " type="id_String"/>
+        <mapperTableEntries name="file_size_bytes" expression="DownloadFileProperties.size.intValue() " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="file_row_count" expression="((Integer)globalMap.get(&quot;tFileRowCount_1_COUNT&quot;))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="file_md5" expression="DownloadFileProperties.md5 " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="CorruptFile" expressionFilter="DownloadFileProperties.size == 0" activateExpressionFilter="true">
+        <mapperTableEntries name="batch_id" expression="((String)globalMap.get(&quot;BATCH_ID&quot;)) " type="id_String"/>
+        <mapperTableEntries name="file_name" expression="DownloadFileProperties.basename " type="id_String" nullable="true"/>
+        <mapperTableEntries name="local_dir" expression="DownloadFileProperties.dirname " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="DownloadFileProperties" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="abs_path" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dirname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="basename" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mode_string" type="id_String" nullable="true"/>
+        <mapperTableEntries name="size" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="mtime" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="mtime_string" type="id_String" nullable="true"/>
+        <mapperTableEntries name="md5" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_postgres_Talend_Mgmt_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_postgres_Talend_Mgmt_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_postgres_Talend_Mgmt_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RJ78Be+P4A1Ai+G6JxAJF8Kw0kT8OA1AMMuLpo0un5GiZGvm7n/5YjZhqGBRtWCCrh/JXvQ4HJJyDTJ23+R9WcB6CUN6TVv2RuTiWw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;pull_ftp_files&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="file_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="remote_dir"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="local_dir"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="file_size_bytes"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="file_row_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="file_md5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="pull_ftp_files_output&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_3">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="remote_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="local_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_size_bytes" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_row_count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="file_md5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="remote_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="local_dir" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_size_bytes" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="file_row_count" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="file_md5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.batch_id = input_row.batch_id;&#xD;&#xA;output_row.file_name = input_row.file_name;&#xD;&#xA;output_row.local_dir = input_row.local_dir;&#xD;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_2">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="local_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDR Type: OOCS-&quot; +row1.file_name.split(&quot;_&quot;)[2] + &quot;\nCDR Name: &quot; + row1.file_name + &quot;\nEmpty File Found for BatchId = &quot;+row1.batch_id+&quot; file &quot;+row1.local_dir+&quot;/&quot;+row1.file_name"/>
+    <elementParameter field="TEXT" name="CODE" value="308"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3">
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="file_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="local_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="1248">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="talend_job_pid"/>
+      <elementValue elementRef="VALUE" value="pid"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;BATCH_ID&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false">
+      <elementValue elementRef="talend_job_pid" value=""/>
+      <elementValue elementRef="batch_id" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="data_flow_log" name="tFixedFlowInput_2">
+      <column comment="" key="false" length="20" name="talend_job_pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1248">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z6DT0H1UEeqcHtCPVsZoFQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="data_flow_log" name="WriteDataFlowLog">
+      <column comment="" key="false" length="5" name="data_flow_step_id" nullable="false" pattern="" precision="0" sourceType="INT2" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="talend_job_pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="WriteDataFlowLog">
+        <mapperTableEntries name="data_flow_step_id" expression="DataFlowSteps.data_flow_step_id " type="id_Short"/>
+        <mapperTableEntries name="talend_job_pid" expression="BatchIdAndPId.talend_job_pid " type="id_String"/>
+        <mapperTableEntries name="batch_id" expression="BatchIdAndPId.batch_id " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="BatchIdAndPId" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="talend_job_pid" type="id_String"/>
+        <mapperTableEntries name="batch_id" type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="DataFlowSteps" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="data_flow_step_id" type="id_Short"/>
+        <mapperTableEntries name="description" expression="&quot;Download 1OCS Files&quot;" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="1248">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_4" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_postgres_Talend_Mgmt_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_postgres_Talend_Mgmt_Database" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_postgres_Talend_Mgmt_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8z+jEmTWGE6pBJ8cZtXDg0M66t6Kan9UX+dL9wWCbKMjcaVytl1DHKFkvueJpvzB1HrlJJetgZJCE43WvMI9mfEnFT300h7CjC9owQ==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;data_flow_log&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_flow_step_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="talend_job_pid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="batch_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="data_flow_log_output"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_4">
+      <column comment="" key="false" length="5" name="data_flow_step_id" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="talend_job_pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="5" name="data_flow_step_id" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="talend_job_pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="batch_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_postgres_Talend_Mgmt_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_postgres_Talend_Mgmt_Database" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_postgres_Talend_Mgmt_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:C3Bm15ZTraef+i2Y3e1MJ8gQtlq1fx9iTZ0rfRY1ZhCPKXvArgjkDDBiYwAG2YExQwMoRT/Vw+OBnOQ6uENGv4pb3mBJO85lthMzEw==" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;data_flow_steps&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;data_flow_step_id,&#xD;&#xA;description&#xD;&#xA;FROM data_flow_steps&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_flow_step_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="data_flow_steps_input"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="true" length="5" name="data_flow_step_id" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="description" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_jkk4YGK0Eeq7L_MR7-DVoQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_talend_mgmt_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_talend_mgmt_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_talend_mgmt_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_talend_mgmt_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_talend_mgmt_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:W4aCh0Y49niv1gyWV5E9fszpf1xKzcL7lAOv8JVXuwfmg8NnvR7uWxEYP6vVCYzChFyCzWCrhke2/USeOBp9Txvg1ExF0CpatQ=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MYSQL_TALEND_MGMT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Talend_Mgmt DB Connect Error&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="100"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;1OCS FTP Connect Error&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="200"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
+  </node>
+  <node componentName="tFTPDelete" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPDelete_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:cdgP8/67GYBU78UlEqaHraAxRIgjES4i8pzWePJxSfHJgCipVyCr" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:ShQ5+1RJ+67r2m27UWE43iuIRXI8jRIviEORhwatUlW5xSoJ" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:/lju7bvN5WnJDzdvQHDAEKU1JoVBK6lKUigcgyO91+U5Cfdl" show="false"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.p_1OCSRemoteDir"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="TARGET_TYPE" value="FILE"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:tj8kLSmsOVVcTFm+BN9KKKrWbNK5CuCVJb42V1Fn" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPDelete_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Remote file deleted: &quot; + context.p_1OCSRemoteDir + ((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;))  "/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_sftp_1OCS_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_sftp_1OCS_port"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="22" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_sftp_1OCS_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:THStWmUP1DGlT/AU0SQgmodHcd369ut4MqB5aMvse94oIOFFZt9kECEa1jP0aczDzL2u0SxRBSO156C7EEi6s3I="/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:TxxZYai5iXtgmypgNcts9ToSqqyHAqJ32Ko1usQp" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:jPvexkk/8v7Qu2VDCZf0QO1Q5+pbnbwlYMEkNblX" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:W1IvUOFamJJLsqLB/Xvy36PjnfBu5cUOI7NnIGRw" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SFTP_SOURCE"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="true"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER" value="&quot;kex&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1,curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;server_host_key&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,rsa-sha2-512,rsa-sha2-256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+    </elementParameter>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="1536">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error deleting file: &quot;+ context.p_1OCSRemoteDir + ((String)globalMap.get(&quot;tFTPFileList_1_CURRENT_FILE&quot;)) + &quot; Error message :&quot; + ((String)globalMap.get(&quot;tFTPDelete_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="CODE" value="42"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_11" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="code"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="200"/>
+      <elementValue elementRef="INPUT_COLUMN" value="code"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="308"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_11">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.moment = input_row.moment;&#xD;&#xA;output_row.pid = input_row.pid;&#xD;&#xA;output_row.root_pid = input_row.root_pid;&#xD;&#xA;output_row.father_pid = input_row.father_pid;&#xD;&#xA;output_row.project = input_row.project;&#xD;&#xA;output_row.job = input_row.job;&#xD;&#xA;output_row.context = input_row.context;&#xD;&#xA;output_row.priority = input_row.priority;&#xD;&#xA;output_row.type = input_row.type;&#xD;&#xA;output_row.origin = input_row.origin;&#xD;&#xA;output_row.message = input_row.message;&#xD;&#xA;output_row.code = input_row.code;&#xA;&#xA;if(input_row.code == 200)&#xA;{&#xD;&#xA;output_row.messageSpecifics = &quot;Source Host: &quot; + java.net.InetAddress.getLocalHost().getHostName() + &quot;&lt;br>Remote Host: &quot;  + context.connection_sftp_1OCS_host ;&#xD;&#xA;}&#xA;else if(input_row.code == 308)&#xA;{&#xA;&#x9;output_row.messageSpecifics = input_row.message;&#xA;/*output_row.messageSpecifics = &quot;CDR Type: &quot;+context.p_cdr_name + &quot;&lt;br>Name: &quot; + &#xA;context.p_cdr_name;&#xA;System.out.println(&quot;Name: &quot;+ context.p_OCSSubTypeFilter);&#xA;System.out.println(&quot;CDR Type: &quot; + context.p_OCSSubTypeFilter); */&#xA;}&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="messageSpecifics" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z6DT0H1UEeqcHtCPVsZoFQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="row7">
+      <column comment="" key="false" length="-1" name="to_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sms_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="bcc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="subject" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="attn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="job" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="alertType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="origin" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="errorDesc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="logDir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="severity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="messageSpecifics" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="code" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="3" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="row7">
+        <mapperTableEntries name="to_recipient" expression="&quot;mark.adayo@novare.com.hk&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sms_recipient" expression="&quot;SMS Recipient&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sender" expression="&quot;donotreply-talend@smart.com&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cc_recipient" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bcc_recipient" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="subject" expression="&quot;Test Mail&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="attn" expression="MessageParams.code == 200? context.p_alert1_attn: context.p_alert2_attn " type="id_String" nullable="true"/>
+        <mapperTableEntries name="job" expression="MessageParams.job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="alertType" expression="MessageParams.code == 200?&quot;TALEND - INTEGRATION ALERT&quot;:&quot;TALEND - ETL DATA ALERT&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" expression="MessageParams.type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="origin" expression="MessageParams.origin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="errorDesc" expression="MessageParams.code == 200?&quot;Connectivity Failure from Download1OCSManifest Job&quot;:&quot;Corrupted/Empty File found from Download1OCSManifest Job&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="logDir" expression="context.p_TACLogDir + &quot;/&quot; + context.p_TACTaskNo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="severity" expression="4" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="pid" expression="MessageParams.pid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="messageSpecifics" expression="MessageParams.messageSpecifics " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code" expression="MessageParams.code " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="MessageParams" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="project" type="id_String" nullable="true"/>
+        <mapperTableEntries name="job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="context" type="id_String" nullable="true"/>
+        <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="messageSpecifics" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z6DT0H1UEeqcHtCPVsZoFQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="MSTeams">
+      <column comment="" key="false" length="-1" name="to_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="bcc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="subject" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="SMSAlert">
+      <column comment="" key="false" length="-1" name="smsCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="messageBody" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="message" expression="&quot;&lt;span> &quot; + row7.alertType + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>ATTN: &quot; + row7.attn  + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>Job: &quot; + row7.job + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>Severity : &quot; + row7.severity + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>Err Desc : &quot; + row7.errorDesc + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>&quot; + row7.messageSpecifics  + &quot;&lt;/span>&lt;br>&quot; +  &quot;&lt;br>&quot; + &quot;&lt;span>Refer to log directory:  &quot; + row7.logDir  + &quot;\n&quot; + row7.type + &quot; &quot; + row7.origin + &quot; &quot; + row7.errorDesc + &quot;&lt;/span>&lt;br>&quot; + &quot;&lt;span>Reference ID : &quot; + row7.pid + &quot;&lt;/span>&lt;br>&quot;  + &quot;&lt;span>&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) + &quot;&lt;/span>&quot; " type="id_String"/>
+        <mapperTableEntries name="sms_body" expression="row7.alertType + &quot;\n&quot; + &quot;ATTN: &quot; + row7.attn  + &quot;\n&quot; + &quot;Job: &quot; + row7.job + &quot;\n&quot; + &quot;Severity : &quot; + row7.severity + &quot;\n&quot; + &quot;Err Desc : &quot; + row7.errorDesc + &quot;\n&quot; + &quot;&quot; + row7.messageSpecifics  + &quot;\n&quot; +  &quot;\n&quot; + &quot;Refer to log directory:  &quot; + row7.logDir  + &quot;\n&quot; + row7.type + &quot; &quot; + row7.origin + &quot; &quot; + row7.errorDesc + &quot;\n&quot; + &quot;Reference ID : &quot; + row7.pid + &quot;\n&quot;  + &quot;&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getCurrentDate()) " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="MSTeams">
+        <mapperTableEntries name="to_recipient" expression="row7.to_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sender" expression="row7.sender" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cc_recipient" expression="row7.cc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bcc_recipient" expression="row7.bcc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="subject" expression="row7.job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" expression="Var.sms_body" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="SMSAlert">
+        <mapperTableEntries name="smsCode" expression="context.p_SMSCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="messageBody" expression="Var.sms_body " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="to_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sms_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sender" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bcc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="subject" type="id_String" nullable="true"/>
+        <mapperTableEntries name="attn" type="id_String" nullable="true"/>
+        <mapperTableEntries name="job" type="id_String" nullable="true"/>
+        <mapperTableEntries name="alertType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="errorDesc" type="id_String" nullable="true"/>
+        <mapperTableEntries name="logDir" type="id_String" nullable="true"/>
+        <mapperTableEntries name="severity" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="messageSpecifics" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="SendSMSMsg" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SendSMSMsg_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="SendSMSMsg"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="SendSMSMsg_1">
+      <column comment="" key="false" length="-1" name="smsCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="messageBody" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_z6DT0H1UEeqcHtCPVsZoFQ-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="message" expression="MSTeams.message " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="MSTeams" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="to_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sender" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bcc_recipient" type="id_String" nullable="true"/>
+        <mapperTableEntries name="subject" type="id_String" nullable="true"/>
+        <mapperTableEntries name="message" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="SendSMTPMail" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SendSMTPMail_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="SendSMTPMail_1">
+      <column comment="" key="false" length="-1" name="to_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="bcc_recipient" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="subject" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="992">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFTPFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFTPFileList_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSetGlobalVar_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tFileRowCount_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileRowCount_1" offsetLabelX="0" offsetLabelY="0" source="tFileRowCount_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFTPGet_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="FileBatches" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="FileBatches" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DownloadFileProperties" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DownloadFileProperties" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="PullFTPFile" lineStyle="0" metaname="PullFTPFile" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tDBOutput_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="PullFTPFile" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="CorruptFile" lineStyle="0" metaname="CorruptFile" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="batch_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CorruptFile" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tWarn_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="BatchIdAndPId" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="BatchIdAndPId" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tFTPDelete_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.p_deleteRemoteFileAfterDownload"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="WriteDataFlowLog" lineStyle="0" metaname="WriteDataFlowLog" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="WriteDataFlowLog" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DataFlowSteps" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DataFlowSteps" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFTPDelete_1" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFTPDelete_1" target="tWarn_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tDie_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tFilterRow_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row3" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_11" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="MessageParams" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="messageSpecifics"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MessageParams" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="row7" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="attn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="severity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="errorDesc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="logDir"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="subject"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sms_recipient"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="messageSpecifics"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="MSTeams" lineStyle="0" metaname="MSTeams" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MSTeams" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="SMSAlert" lineStyle="0" metaname="SMSAlert" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="SendSMSMsg_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SMSAlert" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileProperties_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value=" null != globalMap.get(&quot;tDBOutput_2_NB_LINE&quot;) &amp;&amp; ((Integer)globalMap.get(&quot;tDBOutput_2_NB_LINE&quot;)) == 1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tFixedFlowInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="  null != globalMap.get(&quot;tDBOutput_3_NB_LINE&quot;) &amp;&amp; ((Integer)globalMap.get(&quot;tDBOutput_3_NB_LINE&quot;)) == 1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPFileList_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="OBTAIN DOWNLOAD LIST"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPGet_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DOWNLOAD"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileRowCount_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ROW COUNT"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="BATCHID"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="WRITE BATCH INFO"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="WRITE DOWNLOADED FTP FILES INFO"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="WRITE DATA FLOW LOG"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CONNECT MYSQL"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ERROR"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ERROR"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPDelete_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="INFO"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CONNECT FTP"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MS TEAMS AND SMS ALERT"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SendSMTPMail_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="141;241;204" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

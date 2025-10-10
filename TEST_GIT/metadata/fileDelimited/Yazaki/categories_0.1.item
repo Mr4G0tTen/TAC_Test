@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_2EhNQKp0Ee-1J_OtpRfJaQ" name="categories" dataPackage="_2EmFwKp0Ee-1J_OtpRfJaQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Hamidi/Documents/Documents/YAZAKI/Data Sample Bike Store/categories.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_2EmFwKp0Ee-1J_OtpRfJaQ" name="default" dataManager="_2EhNQKp0Ee-1J_OtpRfJaQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_2EmFwap0Ee-1J_OtpRfJaQ" id="_eVmg4Kp0Ee-1J_OtpRfJaQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2EmFwqp0Ee-1J_OtpRfJaQ" label="category_id" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_2EmFw6p0Ee-1J_OtpRfJaQ" label="category_name" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

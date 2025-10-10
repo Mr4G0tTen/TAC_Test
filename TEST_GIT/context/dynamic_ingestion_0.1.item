@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ehAoYJUQEfCkmLyfO0sNHg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ejG6IZUQEfCkmLyfO0sNHg" comment="" name="scope" prompt="scope?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6IpUQEfCkmLyfO0sNHg" comment="" name="affiliate" prompt="affiliate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6I5UQEfCkmLyfO0sNHg" comment="" name="SMTP_RECEPIENT" prompt="SMTP_RECEPIENT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="buyahamidi72@gmail.com"/>
+  <contextParameter xmi:id="_ejG6JJUQEfCkmLyfO0sNHg" comment="" name="SMTP_EMAIL" prompt="SMTP_EMAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="hamidi.mynvitee@gmail.com"/>
+  <contextParameter xmi:id="_ejG6JZUQEfCkmLyfO0sNHg" comment="" name="SMTP_HOST" prompt="SMTP_HOST?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="smtp.gmail.com"/>
+  <contextParameter xmi:id="_ejG6JpUQEfCkmLyfO0sNHg" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="587"/>
+  <contextParameter xmi:id="_ejG6J5UQEfCkmLyfO0sNHg" comment="" name="list_table_name" prompt="list_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6KJUQEfCkmLyfO0sNHg" comment="" name="target_name" prompt="target_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6KZUQEfCkmLyfO0sNHg" comment="" name="database_type" prompt="database_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6KpUQEfCkmLyfO0sNHg" comment="" name="hostname" prompt="hostname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6K5UQEfCkmLyfO0sNHg" comment="" name="database_name" prompt="database_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6LJUQEfCkmLyfO0sNHg" comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6LZUQEfCkmLyfO0sNHg" comment="" name="schema_name" prompt="schema_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6LpUQEfCkmLyfO0sNHg" comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_ejG6L5UQEfCkmLyfO0sNHg" comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

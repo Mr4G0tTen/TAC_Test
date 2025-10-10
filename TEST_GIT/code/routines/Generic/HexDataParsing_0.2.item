@@ -1,0 +1,273 @@
+package routines;
+
+public class HexDataParsing {
+
+	public static int getIntegerFromHex(String hexData){
+		if (hexData.equals(null) || hexData.length()== 0 || hexData.equalsIgnoreCase(""))
+	  		return ((Integer) null);
+	 	else{
+	  		int resultVal = Integer.parseInt(hexData, 16);
+	  		return resultVal;
+	  	}
+	}
+	public static long getLongFromHex(String hexData){
+		if (hexData.equals(null) || hexData.equalsIgnoreCase(""))
+	  		return (Long) null;
+	  	else{
+	  		Long resultVal = Long.parseLong(hexData,16);
+	  		return resultVal;
+	  	}
+	}
+  public static String getDateTimeFromHex(String hexData){
+	  if (hexData.equals(null) || hexData.equalsIgnoreCase(""))
+	  		return null;
+	  	else
+	  	{
+	  String yearValue = hexData.substring(0,4);
+	  String monthValue = hexData.substring(4,5);
+	  String dateValue = hexData.substring(5,6);
+	  String hoursValue = hexData.substring(6,8);
+	  String minutesValue = hexData.substring(8,10);
+	  String secondsValue = hexData.substring(10,12);
+	  String timeZoneTime = hexData.substring(14,16);
+	  String timeZoneMinutes = hexData.substring(16,18);
+	  String result = (yearValue+"/"+monthValue+"/"+dateValue+" "+hoursValue+":"+minutesValue+":"+secondsValue+"+"+timeZoneTime+":"+timeZoneMinutes);
+	  //result = resultValue;
+  
+	  return result;
+  }
+  }
+  public  static String getStringFromHex (String hexData) {
+  	if (hexData.equals(null) || hexData.equalsIgnoreCase(""))
+  		return null;
+  	 else 	{
+  		String ascii = ""; 
+  		for (int i = 0; i < hexData.length(); i += 2) { 
+          // extract two characters from hex string 
+          String part = hexData.substring(i, i + 2); 
+          // change it into base 16 and typecast as the character 
+          char ch = (char)Integer.parseInt(part, 16); 
+          // add this char to final ASCII string 
+          ascii = ascii + ch; 
+  		}  	
+      return ascii;
+  	}
+  }
+  public static String getHexfromAscii(String asciiValue)
+  {
+     char[] charValue = asciiValue.toCharArray();
+     StringBuffer hex = new StringBuffer();
+     for (int i = 0; i < charValue.length; i++)
+     {
+        hex.append(Integer.toHexString((int) charValue[i]));
+     }
+     return hex.toString();
+  }
+  public static String getIMSIStringFromHex(String hexData){
+	  if (hexData.equals(null) || hexData.equalsIgnoreCase(""))
+	  		return null;
+	  else {
+	String IMSI = ""; 
+	for (int i = 0; i < hexData.length(); i += 2) { 
+	      // extract two characters from hex string 
+	      String part = hexData.substring(i, i  +  2); 
+	      // change it into base 16 and typecast as the character 
+	      int intVal = getIntegerFromHex(part); 
+	      // add this char to final ASCII string 
+	      IMSI = IMSI  +  intVal; 
+		}  	
+		return IMSI;
+	  }
+	
+  }
+  
+  public static String getTimeZoneFromHex(String hexData){
+	  if (hexData.equals(null) || hexData.equalsIgnoreCase(""))
+	  		return  null;
+	  else{
+	  String hoursValue = hexData.substring(0,2);
+	  String minutesValue = hexData.substring(2,4);
+	  return hoursValue+":"+minutesValue;
+  		}
+  }
+  //Using below methods for HUAIMS
+  public static String getHexValue(String data,String tag,int lengthSize){
+	  int lengthSizeValue  = Integer.parseInt(data.substring(tag.length(),tag.length()+lengthSize),16);
+	  String hexValue = data.substring(tag.length()+lengthSize,tag.length()+lengthSize+lengthSizeValue*2);
+	  return hexValue;
+	  
+  }
+ public static String[] getInnerloopValues(String data, String[] tags, int[] lengthSizes, int noOfReturnValues){
+	 //String finalResult ="";
+	 
+	 String[] returnValues = new String[noOfReturnValues];
+	 int i = 0;
+	 
+	 String result="";
+	 //System.out.println("data:"+data);
+	 for (String currentTag : tags){
+		 currentTag = tags[i];
+		 int offset  = 0;
+		 //System.out.println("currentTag:"+currentTag);
+		 if(data.indexOf(currentTag, offset)  ==  0 && data.length()  !=  0){
+		 int taglengthSize = lengthSizes[i];
+		 String lengthHex = data.substring(offset + currentTag.length(), offset + currentTag.length() + taglengthSize);
+		 int lengthIntVal = Integer.parseInt(lengthHex, 16);
+		 offset = offset + currentTag.length() + taglengthSize;
+		 //System.out.println("lengthIntVal:"+lengthIntVal);
+		 String value = data.substring(offset, offset + lengthIntVal * 2);
+		 offset = offset + lengthIntVal * 2;
+		 //System.out.println("i value:"+i);
+		 //System.out.println("offset:"+offset);
+		 data = data.substring(offset);
+		 //System.out.println("remaining data:"+data);
+		 //result = result+value;
+		 returnValues[i] = value;
+		 //break;
+		 //System.out.println("returnValues["+i+"]"+returnValues[i]);
+		 //i++;
+		 }
+		 //returnValues[i] = null;
+		 
+		 i++;
+	
+	}
+	 //return result;
+	 return returnValues;
+ }
+
+ public static String[] getAllInnerloopValues(String data, String[] tags, int[] lengthSizes, int noOfReturnValues){
+	 String originalData = data;
+	 
+	 String[] returnValues = new String[noOfReturnValues];
+	 int i = 0;
+	 
+	 while(data.length() > 0){ // Tags can come in any order
+		 i = 0;
+		 
+		 for (String currentTag : tags){
+			 currentTag = tags[i];
+			 int offset  = 0;
+	
+			 if(data.indexOf(currentTag, offset)  ==  0 && data.length()  !=  0){
+				 int taglengthSize = lengthSizes[i];
+				 String lengthHex = data.substring(offset + currentTag.length(), offset + currentTag.length() + taglengthSize);
+				 int lengthIntVal = Integer.parseInt(lengthHex, 16);
+				 offset = offset + currentTag.length() + taglengthSize;
+		
+				 String value = data.substring(offset, offset + lengthIntVal * 2);
+				 offset = offset + lengthIntVal * 2;
+		
+				 data = data.substring(offset);
+				 returnValues[i] = value;
+			 }		 
+			 i++;
+		 }
+	 }
+
+	 return returnValues;
+ }
+
+  public static String getReverseHexWordFromHex(String message) 
+  { 
+  	String finalResult="";
+  	int hexLength = message.length();
+  	String result="";
+  		for (int j=hexLength;j>0;j-=2){
+      String hexString = message.substring(j-2,j); 
+      result= result+hexString;
+      //System.out.println(result);
+      }
+      finalResult=result; 
+      //System.out.println("FinalResult:"+finalResult);
+     return finalResult;
+  }
+  public static String getHexValueOfTag(String data,String tag,int lengthSize){
+		String hexData="";
+		int lengthSizeVal  = 0;
+		int dataLength = 0;
+		int offset = 0;
+		int lengthValue = 0;
+		if (data.indexOf(tag)  !=  0)
+			return null;
+		else {
+		lengthSizeVal = Integer.parseInt(data.substring(tag.length(),tag.length()+lengthSize),16);
+		//System.out.println("lengthSizeVal:"+lengthSizeVal);
+	    if (lengthSizeVal > 127){
+	    	lengthValue = Integer.parseInt(data.substring(tag.length()+1,tag.length()+2),16);
+		    dataLength = Integer.parseInt(data.substring(tag.length()+2,tag.length()+2+(lengthValue*2)),16);
+	        offset = tag.length()+2+(lengthValue*2);
+	    }
+	    else {
+	    	dataLength = lengthSizeVal;
+	    	offset = tag.length()+lengthSize;
+	    }
+	    //System.out.println("hexData:"+hexData);
+
+		hexData = data.substring(offset,offset+(dataLength*2));
+		//System.out.println("hexData:"+hexData);
+		}
+		return hexData;
+	}
+  public static String getSpecificTagHexValue_old(String data,String tag,int lengthSize){
+	  int offset  = 0;
+	  int datatagLength=tag.length();
+	  int fieldTagLength  = 0;
+	  String result="";
+	  String currentTag = tag;
+	  String  hexData ="";
+	  System.out.println("currentTag = :"+currentTag);
+	  for (int i = 0;i<data.length();i+=offset){
+		  //offset  = 0;
+		  String fieldTag = data.substring(i,i+datatagLength);
+		  System.out.println("fieldTag = :"+fieldTag);
+		  offset=i+datatagLength;
+		  //fieldTagLength = Integer.parseInt(data.substring(offset,offset+lengthSize),16);
+		  //offset = offset+lengthSize;
+		  if (currentTag.equalsIgnoreCase(fieldTag)){
+			  //System.out.println("fieldTag = :"+fieldTag);
+			  //System.out.println("offset = :"+offset);
+		  fieldTagLength = Integer.parseInt(data.substring(offset,offset+2),16);
+		  offset = offset+2;
+		  hexData = data.substring(offset,offset+(fieldTagLength*2));
+		  //if (currentTag.equalsIgnoreCase(fieldTag)){
+		  result = hexData;
+		  //break;
+		  }
+		  else{
+			  
+			  return null;
+		  }
+		  offset = offset+hexData.length();
+		 // System.out.println("offset:"+offset);
+	  }
+	  return result;
+	  
+  }
+  public static String getSpecificTagHexValue(String data,String tag,int lengthSize){
+	  int offset  = 0;
+	  int datatagLength=tag.length();
+	  int fieldTagLength  = 0;
+	  String result="";
+	  String currentTag = tag;
+	  String  hexData ="";
+	  //System.out.println("currentTag = :"+currentTag);
+	  for (int i = 0;i<data.length();i+=offset){
+		  String fieldTag = data.substring(i,i+datatagLength);
+		  //System.out.println("fieldTag = :"+fieldTag);
+		  offset=i+datatagLength;
+		  fieldTagLength = Integer.parseInt(data.substring(offset,offset+lengthSize),16);
+		  offset = offset+lengthSize;
+		  hexData = data.substring(offset,offset+(fieldTagLength*2));
+		  //System.out.println("hexData: "+hexData);
+		  offset = offset+(fieldTagLength*2);
+		  if (currentTag.equalsIgnoreCase(fieldTag)){
+		  return hexData;
+		  }
+		 
+	  }
+	  return result;
+	  
+  }
+  
+}

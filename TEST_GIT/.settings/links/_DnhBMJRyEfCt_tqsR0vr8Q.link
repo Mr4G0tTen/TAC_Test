@@ -1,0 +1,103 @@
+{
+  "itemId" : "_DnhBMJRyEfCt_tqsR0vr8Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_ZvP4UP8MEe-uHLRosiKKBg",
+    "parameterList" : [ {
+      "id" : "_ZvtLUf8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Login"
+    }, {
+      "id" : "_ZvtLUv8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Server"
+    }, {
+      "id" : "_ZvtLU_8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Password"
+    }, {
+      "id" : "_ZvtLVP8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_AdditionalParams"
+    }, {
+      "id" : "_ZvtLVf8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Database"
+    }, {
+      "id" : "_ZvtLVv8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Schema"
+    }, {
+      "id" : "_ZvtLV_8MEe-uHLRosiKKBg",
+      "name" : "Artha_Db_SQLServer_POC_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_EJ94UP8UEe-uHLRosiKKBg",
+    "parameterList" : [ {
+      "id" : "_EKZ9Mv8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Server"
+    }, {
+      "id" : "_EKZ9N_8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Schema"
+    }, {
+      "id" : "_EKZ9NP8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_AdditionalParams"
+    }, {
+      "id" : "_EKZ9Nf8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Database"
+    }, {
+      "id" : "_EKZ9Mf8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Login"
+    }, {
+      "id" : "_EKZ9M_8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Password"
+    }, {
+      "id" : "_EKZ9Nv8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_eg_aQJUQEfCkmLyfO0sNHg",
+    "parameterList" : [ {
+      "id" : "_ejG6IZUQEfCkmLyfO0sNHg",
+      "name" : "scope"
+    }, {
+      "id" : "_ejG6IpUQEfCkmLyfO0sNHg",
+      "name" : "affiliate"
+    }, {
+      "id" : "_ejG6I5UQEfCkmLyfO0sNHg",
+      "name" : "SMTP_RECEPIENT"
+    }, {
+      "id" : "_ejG6JJUQEfCkmLyfO0sNHg",
+      "name" : "SMTP_EMAIL"
+    }, {
+      "id" : "_ejG6JZUQEfCkmLyfO0sNHg",
+      "name" : "SMTP_HOST"
+    }, {
+      "id" : "_ejG6JpUQEfCkmLyfO0sNHg",
+      "name" : "SMTP_PORT"
+    }, {
+      "id" : "_ejG6J5UQEfCkmLyfO0sNHg",
+      "name" : "list_table_name"
+    }, {
+      "id" : "_ejG6KJUQEfCkmLyfO0sNHg",
+      "name" : "target_name"
+    }, {
+      "id" : "_ejG6KZUQEfCkmLyfO0sNHg",
+      "name" : "database_type"
+    }, {
+      "id" : "_ejG6KpUQEfCkmLyfO0sNHg",
+      "name" : "hostname"
+    }, {
+      "id" : "_ejG6K5UQEfCkmLyfO0sNHg",
+      "name" : "database_name"
+    }, {
+      "id" : "_ejG6LJUQEfCkmLyfO0sNHg",
+      "name" : "port"
+    }, {
+      "id" : "_ejG6LZUQEfCkmLyfO0sNHg",
+      "name" : "schema_name"
+    }, {
+      "id" : "_ejG6LpUQEfCkmLyfO0sNHg",
+      "name" : "password"
+    }, {
+      "id" : "_ejG6L5UQEfCkmLyfO0sNHg",
+      "name" : "username"
+    } ]
+  } ]
+}

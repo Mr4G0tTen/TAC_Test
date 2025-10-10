@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_a2gxIDE6EfCg74Grmm6peg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_a2gxITE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Password" prompt="postgres_sbstdb_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:HJU16jbMfZBr77+eXCwcGKJr4/KmSq+9jAmO4AMixhK+/cEshdQK2w=="/>
+  <contextParameter xmi:id="_a2gxIjE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Login" prompt="postgres_sbstdb_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_a2gxIzE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Port" prompt="postgres_sbstdb_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_a2gxJDE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Database" prompt="postgres_sbstdb_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_a2gxJTE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Schema" prompt="postgres_sbstdb_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="public"/>
+  <contextParameter xmi:id="_a2gxJjE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_Server" prompt="postgres_sbstdb_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="192.168.30.105"/>
+  <contextParameter xmi:id="_a2gxJzE6EfCg74Grmm6peg" comment="" name="postgres_sbstdb_AdditionalParams" prompt="postgres_sbstdb_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="connection_hive_1OCS_Database" prompt="connection_hive_1OCS_Database?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="smart_predev"/>
+    <contextParameter comment="" name="connection_hive_1OCS_hiveAdditionalJDBCParameters" prompt="connection_hive_1OCS_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_1OCS_Login" prompt="connection_hive_1OCS_Login?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Password" prompt="connection_hive_1OCS_Password?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_Password" value="enc:system.encryption.key.v1:X5SoUuvJFZ+8V/KEulzL1ORzQulUs9jXBIdY8/wRNTXFgCISE+c="/>
+    <contextParameter comment="" name="connection_hive_1OCS_Port" prompt="connection_hive_1OCS_Port?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Server" prompt="connection_hive_1OCS_Server?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8090" internalId="_8O-W8DuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--ADuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--ATuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" type="id_String" value="tlndusr_prod" internalId="_8O--AjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--AzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory" internalId="_8O--BDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--BTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart" internalId="_8O--BjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs" internalId="_8O--BzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8080" internalId="_8O--CDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--CTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8020" internalId="_8O--CjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" type="id_String" value="hdfs" internalId="_8O--CzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8082" internalId="_8O--DDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider" internalId="_8O--DTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8030" internalId="_8O--DjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8088" internalId="_8O--DzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--EDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8050" internalId="_8O--ETuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--EjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--EzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" type="id_String" value="rm1,rm2" internalId="_8O--FDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:50090" internalId="_8O--FTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" type="id_String" value="yarn-cluster" internalId="_8O--FjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--FzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart" internalId="_8O--GDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8141" internalId="_8O--GTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--GjuIEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="connection_hive_1OCS_Database" prompt="connection_hive_1OCS_Database?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="talend_t0t1"/>
+    <contextParameter comment="" name="connection_hive_1OCS_hiveAdditionalJDBCParameters" prompt="connection_hive_1OCS_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_1OCS_Login" prompt="connection_hive_1OCS_Login?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Password" prompt="connection_hive_1OCS_Password?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_Password" value="enc:system.encryption.key.v1:ErQn1at0Lp3fiwgrwta+Am0DfH+18vRiZoFw+afN1eyHgg80n0o="/>
+    <contextParameter comment="" name="connection_hive_1OCS_Port" prompt="connection_hive_1OCS_Port?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Server" prompt="connection_hive_1OCS_Server?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8090" internalId="_8O--GzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--HDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--HTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" type="id_String" value="tlndusr_prod" internalId="_8O--HjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--HzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory" internalId="_8O--IDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--ITuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart" internalId="_8O--IjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs" internalId="_8O--IzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8080" internalId="_8O--JDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--JTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8020" internalId="_8O--JjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" type="id_String" value="hdfs" internalId="_8O--JzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8082" internalId="_8O--KDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider" internalId="_8O--KTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8030" internalId="_8O--KjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8088" internalId="_8O--KzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--LDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8050" internalId="_8O--LTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--LjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--LzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" type="id_String" value="rm1,rm2" internalId="_8O--MDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:50090" internalId="_8O--MTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" type="id_String" value="yarn-cluster" internalId="_8O--MjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--MzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart" internalId="_8O--NDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8141" internalId="_8O--NTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--NjuIEfCBRaXGkSs2dw"/>
+  </context>
+  <context confirmationNeeded="false" name="TEST">
+    <contextParameter comment="" name="connection_hive_1OCS_Database" prompt="connection_hive_1OCS_Database?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="smart_predev"/>
+    <contextParameter comment="" name="connection_hive_1OCS_hiveAdditionalJDBCParameters" prompt="connection_hive_1OCS_hiveAdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_hive_1OCS_Login" prompt="connection_hive_1OCS_Login?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="tlndusr_prod"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Password" prompt="connection_hive_1OCS_Password?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_Password" value="enc:system.encryption.key.v1:IQqoDzTUoz2JmKyiu4F8+Zn5B17xU20d7VymLb+Y9qH83W+R2XQ="/>
+    <contextParameter comment="" name="connection_hive_1OCS_Port" prompt="connection_hive_1OCS_Port?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10000"/>
+    <contextParameter comment="" name="connection_hive_1OCS_Server" prompt="connection_hive_1OCS_Server?" promptNeeded="false" repositoryContextId="_GGd0kGK0EeqUavDqWqJbhg" type="id_String" value="10.126.7.125"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8090" internalId="_8O--NzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--ODuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_https_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_https_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8090" internalId="_8O--OTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_User" prompt="hadoop_SMART_User?" promptNeeded="false" type="id_String" value="tlndusr_prod" internalId="_8O--OjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--OzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_web_service_url" prompt="hadoop_SMART_yarn_log_server_web_service_url?" promptNeeded="false" type="id_String" value="http://master-1-r1.datahub.intra.smart:8188/ws/v1/applicationhistory" internalId="_8O--PDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_enabled" prompt="hadoop_SMART_yarn_resourcemanager_ha_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--PTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_proxyuser_yarn_hosts" prompt="hadoop_SMART_hadoop_proxyuser_yarn_hosts?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart,master-6-r5.datahub.intra.smart" internalId="_8O--PjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_log_server_url" prompt="hadoop_SMART_yarn_log_server_url?" promptNeeded="false" type="id_String" value="http://master-3-r3.datahub.intra.smart:19888/jobhistory/logs" internalId="_8O--PzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_https_address" prompt="hadoop_SMART_dfs_namenode_https_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8080" internalId="_8O--QDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_zk_address" prompt="hadoop_SMART_yarn_resourcemanager_zk_address?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--QTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_rpc_address" prompt="hadoop_SMART_dfs_namenode_rpc_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8020" internalId="_8O--QjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_superusergroup" prompt="hadoop_SMART_dfs_permissions_superusergroup?" promptNeeded="false" type="id_String" value="hdfs" internalId="_8O--QzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_http_address" prompt="hadoop_SMART_dfs_namenode_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:8082" internalId="_8O--RDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_client_failover_proxy_provider" prompt="hadoop_SMART_yarn_client_failover_proxy_provider?" promptNeeded="false" type="id_String" value="org.apache.hadoop.yarn.client.RequestHedgingRMFailoverProxyProvider" internalId="_8O--RTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_scheduler_address" prompt="hadoop_SMART_yarn_resourcemanager_scheduler_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8030" internalId="_8O--RjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart:8088" internalId="_8O--RzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1" prompt="hadoop_SMART_yarn_resourcemanager_webapp_address_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8088" internalId="_8O--SDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_address" prompt="hadoop_SMART_yarn_resourcemanager_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8050" internalId="_8O--STuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_hadoop_registry_zk_quorum" prompt="hadoop_SMART_hadoop_registry_zk_quorum?" promptNeeded="false" type="id_String" value="master-1-r1.datahub.intra.smart:2181,master-2-r1.datahub.intra.smart:2181,master-3-r3.datahub.intra.smart:2181,master-4-r3.datahub.intra.smart:2181,master-5-r5.datahub.intra.smart:2181" internalId="_8O--SjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname" prompt="hadoop_SMART_yarn_resourcemanager_hostname?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--SzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_ha_rm_ids" prompt="hadoop_SMART_yarn_resourcemanager_ha_rm_ids?" promptNeeded="false" type="id_String" value="rm1,rm2" internalId="_8O--TDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_namenode_secondary_http_address" prompt="hadoop_SMART_dfs_namenode_secondary_http_address?" promptNeeded="false" type="id_String" value="datahubhdp-isilon.intra.smart:50090" internalId="_8O--TTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_cluster_id" prompt="hadoop_SMART_yarn_resourcemanager_cluster_id?" promptNeeded="false" type="id_String" value="yarn-cluster" internalId="_8O--TjuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_dfs_permissions_enabled" prompt="hadoop_SMART_dfs_permissions_enabled?" promptNeeded="false" type="id_String" value="true" internalId="_8O--TzuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm2" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm2?" promptNeeded="false" type="id_String" value="master-6-r5.datahub.intra.smart" internalId="_8O--UDuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_admin_address" prompt="hadoop_SMART_yarn_resourcemanager_admin_address?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart:8141" internalId="_8O--UTuIEfCBRaXGkSs2dw"/>
+    <contextParameter comment="" name="hadoop_SMART_yarn_resourcemanager_hostname_rm1" prompt="hadoop_SMART_yarn_resourcemanager_hostname_rm1?" promptNeeded="false" type="id_String" value="master-2-r1.datahub.intra.smart" internalId="_8O--UjuIEfCBRaXGkSs2dw"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:zmBmevemoMgbhOEeGr0NlHTeQ1CpvDW7VnRQvfWb" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/7.1.1/Talend-Studio-20181026_1147-V7.1.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HeWDuY8a7k9rFs6RiWnuyalz54tPGdHSM5uJZFxv" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_-TwLpk56EeqkYJYuyZtj-Q" name="DQTechnical"/>
+    <routinesParameter id="_-TAkwE56EeqkYJYuyZtj-Q" name="DataMasking"/>
+    <routinesParameter id="_-UDGkE56EeqkYJYuyZtj-Q" name="DataOperation"/>
+    <routinesParameter id="_-TcpoE56EeqkYJYuyZtj-Q" name="DataQualityDependencies"/>
+    <routinesParameter id="_-TJutk56EeqkYJYuyZtj-Q" name="DataQuality"/>
+    <routinesParameter id="_-TmaoE56EeqkYJYuyZtj-Q" name="DqStringHandling"/>
+    <routinesParameter id="_-DosAE56EeqkYJYuyZtj-Q" name="MDM"/>
+    <routinesParameter id="_-UM3kE56EeqkYJYuyZtj-Q" name="Mathematical"/>
+    <routinesParameter id="_-UgZlk56EeqkYJYuyZtj-Q" name="Numeric"/>
+    <routinesParameter id="_-Uz7kE56EeqkYJYuyZtj-Q" name="Relational"/>
+    <routinesParameter id="_-WJYUE56EeqkYJYuyZtj-Q" name="SQLike"/>
+    <routinesParameter id="_-U9Fhk56EeqkYJYuyZtj-Q" name="StringHandling"/>
+    <routinesParameter id="_-VQAcE56EeqkYJYuyZtj-Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_-VZxdk56EeqkYJYuyZtj-Q" name="TalendDate"/>
+    <routinesParameter id="_-WAOYE56EeqkYJYuyZtj-Q" name="TalendStringUtil"/>
+    <routinesParameter id="_-VssYE56EeqkYJYuyZtj-Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tHiveCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+HqdXxAzm8PoHzOGGsAaR233w0+Iibl5Ny5Tdmcm" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;hiveServer2User@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;jdbc:mysql://&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:3HDByaN95zG5M0hl5M5tXHmCmGWbe1AsysbuIEpDfzCcFw==" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hive.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:bYAkF3xexa2z+FPNMKqNnC0hHPCgx1zRNil9tirF" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:UuytjwRo/tkC4McHKnTAwKvHhpCS/hB9QF/7n3TbjrHEbJlnaIM=" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:50300&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:Q3WQkH8F7aibatdgX7ytrSDnRNKwDp58i5JC+HFe" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:+jJJ+dCM1vKyN407TSaky5NzoomESRWJeb3HkWf7" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:iY9AUbEGZAPLDCHWyWQI9irqQ+PuJlPAT3UZuK6g" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCT_BAL&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
+    <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="PARQUET"/>
+    <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_PARTITIONS" value="true"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="LABEL" name="FILE_LOCATION_NOTE" value="ex.s3://{bucket_name}/path or hdfs://{master_dns}:9000/path (table should be external)" show="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;hdfs://datahubhdp-isilon.intra.smart:8020/talend_prod/hive/t1/smart_predev/acct_bal&quot;"/>
+    <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="S3_PASSWORD" value="enc:system.encryption.key.v1:Wd9xOsy8N/8SiEbA/Rp6e0Kije8AlMzguDcrM9KJ" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="hive_id" show="false"/>
+    <elementParameter field="CHECK" name="SET_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_TERMINATED_BY" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_ESCAPE_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_ESCAPE_BY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_COLLECTION_ITEM_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION_ITEM_TERMINATED_BY" value="&quot;\u0002&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAP_KEY_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAP_KEY_TERMINATED_BY" value="&quot;\u0003&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_LINES_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LINES_TERMINATED_BY" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SERDE_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SERDE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="LIKE_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="LIKE_TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EXTERNAL" value="false"/>
+    <elementParameter field="TEXT" name="TABLE_COMMENT" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AS_SELECT" value="false"/>
+    <elementParameter field="MEMO_SQL" name="SELECT" value="&quot;select id, name from employee&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_CLUSTERED_BY_AND_SKEWED_BY" value="false"/>
+    <elementParameter field="MEMO_SQL" name="CLUSTERED_BY_AND_SKEWED_BY" value="&quot;CLUSTERED BY (col_name, col_name, ...) [SORTED BY (col_name&#xA;&#x9;&#x9;&#x9;&#x9;[ASC|DESC], ...)] INTO num_buckets BUCKETS]&#xA;&#x9;&#x9;&#x9;&#x9;SKEWED BY (col_name,&#xA;&#x9;&#x9;&#x9;&#x9;col_name, ...) ON ([(col_value, col_value, ...),&#xA;&#x9;&#x9;&#x9;&#x9;...|col_value,&#xA;&#x9;&#x9;&#x9;&#x9;col_value, ...])&#xA;&#x9;&#x9;&#x9;&#x9;&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TABLE" name="SERDE_PROPERTIES"/>
+    <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
+    <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in." show="false"/>
+    <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+    <metadata connector="FLOW" label="T_DWB_01_ACCT_BAL" name="tHiveCreateTable_1">
+      <column comment="" key="false" length="11" name="EFFECTIVE_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREATION_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="PROCESS_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="BUSINESS_UNIT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SUBSCRIPTION_TYPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOURCE_SYSTEM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SOURCE_EVENT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="JOB_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="BATCH_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="FILE_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PORT_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="OWNING_SUBSCRIBER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="WALLET_NAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_LIMIT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_MAX" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="WALLET_EXPIRY_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_BALANCE" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="INSERT_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SUBBRAND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="RAW_FILENAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="TRNSFRM_DATASTARTTIME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="PARTITION" label="T_DWB_01_ACCT_BAL" name="PARTITION">
+      <column comment="" key="false" length="20" name="TALEND_BATCH_ID" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" originalLength="20" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_UqJ88GKzEeqUavDqWqJbhg" show="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="HDP_3_1_4_12_1"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_hive_1OCS_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_hive_1OCS_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_hive_1OCS_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_hive_1OCS_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q2NuZbvGxnMOnNcIzkR4LkDENqoiRikn9p/fNM+2UT0ivHM1Q+tpa4E0Hj7fXRqfMw4pLU9fet1jrjnD84TyHK4="/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="context.connection_hive_1OCS_hiveAdditionalJDBCParameters"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:7SGDAKVzkFCFuIZu23taaZNq1YTiEbIyhg9FKuY7" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:IwvwCDCp3m509A4CPyV6RXFMbp9LX57n3aDDQkUH" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:Rv31Yt1YHbqBAFM5qpOsD9KuOKwrZTzB4OEeFjcopmwi1+JamVI=" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="context.hadoop_SMART_ResourceManager" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="context.hadoop_SMART_ResourceManager" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="context.hadoop_SMART_NameNodeUri" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="context.hadoop_SMART_ResourceManagerScheduler" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="context.hadoop_SMART_JobHistory" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:dUBYE4E9rjxeOf2nZ4+VIDDBKzgJx8OxwaWSoShs" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:NpMZW+E9sCC8L7uvNKersZe1CA70g34vhlyY+/Eu" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" value="tez" show="false"/>
+    <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_MASTER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HBASE_REGIONSERVER_PRINCIPAL" value="&quot;hbase/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_REGISTER_JAR" value="false" show="false"/>
+    <elementParameter field="LABEL" name="REGISTER_JAR_NOTE" value="When filling in the Jar path information below, make sure that the JAR files are available on the server." show="false"/>
+    <elementParameter field="TABLE" name="REGISTER_JAR" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:yP9xfoErRMfXMQrkMIAFhg33m/WL/xfw5f49qbwL" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TEZ_LIB" value="INSTALL" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|HIVE_VERSION}&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEZ_JARS_NAME" value="avro-1.5.4.jar,commons-cli-1.2.jar,commons-collections4-4.0.jar,guava-11.0.2.jar,guice-3.0.jar,hadoop-mapreduce-client-common-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-core-2.4.0.2.1.1.0-385.jar,hadoop-mapreduce-client-shuffle-2.4.0.2.1.1.0-385.jar,jettison-1.3.4.jar,protobuf-java-2.5.0.jar,snappy-java-1.0.4.1.jar,tez-api-0.4.0.2.1.1.0-385.jar,tez-common-0.4.0.2.1.1.0-385.jar,tez-dag-0.4.0.2.1.1.0-385.jar,tez-mapreduce-0.4.0.2.1.1.0-385.jar,tez-mapreduce-examples-0.4.0.2.1.1.0-385.jar,tez-runtime-internals-0.4.0.2.1.1.0-385.jar,tez-runtime-library-0.4.0.2.1.1.0-385.jar,tez-tests-0.4.0.2.1.1.0-385.jar,commons-lang3-3.0.jar" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="TEZ_LIB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TEZ_LIB_NAME" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.http-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_http_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.https-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_https_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.rpc-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_rpc_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.namenode.secondary.http-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_namenode_secondary_http_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.permissions.enabled&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_permissions_enabled"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;dfs.permissions.superusergroup&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_dfs_permissions_superusergroup"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.registry.zk.quorum&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_hadoop_registry_zk_quorum"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.client.failover-proxy-provider&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_client_failover_proxy_provider"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.log.server.url&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_log_server_url"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.log.server.web-service.url&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_log_server_web_service_url"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.admin.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_admin_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.cluster-id&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_cluster_id"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.ha.enabled&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_ha_enabled"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.ha.rm-ids&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_ha_rm_ids"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.hostname.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_hostname_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.scheduler.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_scheduler_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.address.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_address_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address.rm1&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm1"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.webapp.https.address.rm2&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_webapp_https_address_rm2"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.resourcemanager.zk-address&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_yarn_resourcemanager_zk_address"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.proxyuser.yarn.hosts&quot;"/>
+      <elementValue elementRef="VALUE" value="context.hadoop_SMART_hadoop_proxyuser_yarn_hosts"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHiveCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:daku1YRQxhJRkTkD4ZDpY3SmaSxPsbYm1SrGoYrR" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;hiveServer2User@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;jdbc:mysql://&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:cPcmDT/1vPZaw3s0zMOY1xjNOMN94niBOYiBgBugI7LsBw==" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hive.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:wdTnbWCyLpXdc4APFCE5OMyR9+bE+d1NOd8hEluu" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:LiHl5ORPh/uqQ/FkNGX0tVwM4EQmgKgwhNXSuTpC2HovVAoonCE=" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:50300&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:XOpy1nrqtBbxQMZ/hnKa9wTMl1wd2NQW/aeq+YEd" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:krpV0IoDtKSsR2p+59q2G1wh03XwxI8MVUwhg4I/" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:QyBja6smE4r2UUYvO4tB4MxZcDWI4HsAd6qxI5D+" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CREDIT_ADJ&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
+    <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="PARQUET"/>
+    <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_PARTITIONS" value="true"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="LABEL" name="FILE_LOCATION_NOTE" value="ex.s3://{bucket_name}/path or hdfs://{master_dns}:9000/path (table should be external)" show="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;hdfs://datahubhdp-isilon.intra.smart:8020/talend_prod/hive/t1/smart_predev/credit_adj&quot;"/>
+    <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="S3_PASSWORD" value="enc:system.encryption.key.v1:rfXiKnAwZZUbFjj5w/xaX5/QQ0yO3HXww5EpuVsC" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="hive_id" show="false"/>
+    <elementParameter field="CHECK" name="SET_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_TERMINATED_BY" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_ESCAPE_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_ESCAPE_BY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_COLLECTION_ITEM_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION_ITEM_TERMINATED_BY" value="&quot;\u0002&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAP_KEY_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAP_KEY_TERMINATED_BY" value="&quot;\u0003&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_LINES_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LINES_TERMINATED_BY" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SERDE_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SERDE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="LIKE_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="LIKE_TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EXTERNAL" value="false"/>
+    <elementParameter field="TEXT" name="TABLE_COMMENT" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AS_SELECT" value="false"/>
+    <elementParameter field="MEMO_SQL" name="SELECT" value="&quot;select id, name from employee&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_CLUSTERED_BY_AND_SKEWED_BY" value="false"/>
+    <elementParameter field="MEMO_SQL" name="CLUSTERED_BY_AND_SKEWED_BY" value="&quot;CLUSTERED BY (col_name, col_name, ...) [SORTED BY (col_name&#xA;&#x9;&#x9;&#x9;&#x9;[ASC|DESC], ...)] INTO num_buckets BUCKETS]&#xA;&#x9;&#x9;&#x9;&#x9;SKEWED BY (col_name,&#xA;&#x9;&#x9;&#x9;&#x9;col_name, ...) ON ([(col_value, col_value, ...),&#xA;&#x9;&#x9;&#x9;&#x9;...|col_value,&#xA;&#x9;&#x9;&#x9;&#x9;col_value, ...])&#xA;&#x9;&#x9;&#x9;&#x9;&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TABLE" name="SERDE_PROPERTIES"/>
+    <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
+    <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in." show="false"/>
+    <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+    <metadata connector="FLOW" label="T_DWB_01_CREDIT_ADJ" name="tHiveCreateTable_5">
+      <column comment="" key="false" length="11" name="EFFECTIVE_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREATION_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="PROCESS_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="BUSINESS_UNIT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SUBSCRIPTION_TYPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOURCE_SYSTEM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SOURCE_EVENT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="JOB_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="BATCH_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="FILE_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PORT_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="OWNING_SUBSCRIBER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="BRAND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CHANNEL_SERVER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="PLAN_CODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CARD_NUMBER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_CREDITLIMIT_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ACCUM_ACCOUNT_NAME_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ACCUM_ACCOUNT_BALANCE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ACCUM_ACCOUNT_VALUE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="ACCUM_ACCOUNT_EXPIRY_DTTM_0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="TARIFF_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="TARIFF_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="TARIFF_VALUE_LIST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TARIFF_VALUE" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TRANSACTION_CHARGE_AMT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="ACCESS_METHOD_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CORRELATION_ID_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ERROR_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="PARENT_SUBSCRIBER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="FUND_SOURCE_NUMBER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="ACCESS_METHOD_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="EVENT_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="EVENT_TYPE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CLIENT_START_REQUEST_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATING_LOGIC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="USE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CLIENT_TRANSPARENT_DATA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="EXPIRY_POLICY_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="EXPIRY_DAYS_EXTENSION" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="EXPIRY_ABSOLUTE_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="TOUCH_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="PARENT_HOMETIMEZONE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="ROP_KEY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SESSION_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="TRANSACTION_GROUP_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="UOM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="CARD_TYPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="TRANSACTION_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="EVENT_INFO_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_6" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_7" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_8" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CREDITED_WALLET_NAME_9" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_5" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_6" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_7" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_8" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_CREDIT_9" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_5" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_6" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_7" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_8" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="CREDITED_WALLET_BALANCE_9" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_8" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREDITED_WALLET_EXPIRY_DTTM_9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="INSERT_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SUBBRAND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="RAW_FILENAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="TRNSFRM_DATASTARTTIME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="PARTITION" name="PARTITION">
+      <column comment="" key="false" length="20" name="TALEND_BATCH_ID" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" originalLength="20" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHiveCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HIVE" value="" show="false"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:atcviOlIogVy6KzGZxJQp4HzAKhnkHWZurJJgk4P" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;hiveServer2User@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_JDBC_URL" value="&quot;jdbc:mysql://&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;" show="false"/>
+    <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="enc:system.encryption.key.v1:Xr3eF2ldfRWVjZui2VpZ3kADMQr1fVPM3o1AnSOEYeONCQ==" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hive&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hive.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:MmdSwb19LRf710JISNRfDP4JjSGPMkZ8VMCSbxjj" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:BPL3M/WIdG0wxDbLwDAUrPQTotObt06gk0UCMeCtk+CQKJ7VC00=" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPRED_JT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JT" value="&quot;localhost:50300&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://localhost:8020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:HIKKogJWzubfYAYmSDL7zp5IfOdAocEkbL+xOMyj" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:5GJgTtiEOWcJy6LQ1eYHUdsxttzbGLEqQSsZ3QjY" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" value="enc:system.encryption.key.v1:3o0a46e9W/aHRFknPkavtW4YPApEegwFiq4vCCsM" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" value="&quot;https://api.qubole.com/api&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DEBIT_ADJ&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
+    <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="PARQUET"/>
+    <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_PARTITIONS" value="true"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="LABEL" name="FILE_LOCATION_NOTE" value="ex.s3://{bucket_name}/path or hdfs://{master_dns}:9000/path (table should be external)" show="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;hdfs://datahubhdp-isilon.intra.smart:8020/talend_prod/hive/t1/smart_predev/debit_adj&quot;"/>
+    <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="S3_PASSWORD" value="enc:system.encryption.key.v1:PoOom6LO/FYvqNFd6/XI7U9UepVkX3ajqbVD2UWt" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="hive_id" show="false"/>
+    <elementParameter field="CHECK" name="SET_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_TERMINATED_BY" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FIELD_ESCAPE_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELD_ESCAPE_BY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_COLLECTION_ITEM_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION_ITEM_TERMINATED_BY" value="&quot;\u0002&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAP_KEY_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAP_KEY_TERMINATED_BY" value="&quot;\u0003&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_LINES_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LINES_TERMINATED_BY" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SERDE_ROW_FORMAT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SERDE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="LIKE_TABLE" value="false"/>
+    <elementParameter field="TEXT" name="LIKE_TABLE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EXTERNAL" value="false"/>
+    <elementParameter field="TEXT" name="TABLE_COMMENT" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AS_SELECT" value="false"/>
+    <elementParameter field="MEMO_SQL" name="SELECT" value="&quot;select id, name from employee&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_CLUSTERED_BY_AND_SKEWED_BY" value="false"/>
+    <elementParameter field="MEMO_SQL" name="CLUSTERED_BY_AND_SKEWED_BY" value="&quot;CLUSTERED BY (col_name, col_name, ...) [SORTED BY (col_name&#xA;&#x9;&#x9;&#x9;&#x9;[ASC|DESC], ...)] INTO num_buckets BUCKETS]&#xA;&#x9;&#x9;&#x9;&#x9;SKEWED BY (col_name,&#xA;&#x9;&#x9;&#x9;&#x9;col_name, ...) ON ([(col_value, col_value, ...),&#xA;&#x9;&#x9;&#x9;&#x9;...|col_value,&#xA;&#x9;&#x9;&#x9;&#x9;col_value, ...])&#xA;&#x9;&#x9;&#x9;&#x9;&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TABLE" name="SERDE_PROPERTIES"/>
+    <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
+    <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in." show="false"/>
+    <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR"/>
+    <metadata connector="FLOW" label="T_DWB_01_DEBIT_ADJ" name="tHiveCreateTable_7">
+      <column comment="" key="false" length="11" name="EFFECTIVE_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CREATION_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="PROCESS_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="BUSINESS_UNIT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="SUBSCRIPTION_TYPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="SOURCE_SYSTEM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="SOURCE_EVENT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="JOB_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="BATCH_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="FILE_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PORT_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="OWNING_SUBSCRIBER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="BRAND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="TRANSACTION_GROUP_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CHANNEL_SERVER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="PLAN_CODE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CARD_NUMBER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_1" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_2" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_3" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_4" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_CREDITLIMIT_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ACCUM_ACCOUNT_NAME_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ACCUM_ACCOUNT_BALANCE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="ACCUM_ACCOUNT_VALUE_0" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="ACCUM_ACCOUNT_EXPIRY_DTTM_0" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="TARIFF_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="TARIFF_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="TARIFF_VALUE_LIST" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TARIFF_VALUE" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="TRANSACTION_CHARGE_AMT" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="ACCESS_METHOD_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CORRELATION_ID_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ERROR_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="ERROR_INFO_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="PARENT_SUBSCRIBER_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="FUND_SOURCE_NUMBER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="ACCESS_METHOD_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="EVENT_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="EVENT_TYPE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="CLIENT_START_REQUEST_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATING_LOGIC" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="USE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CLIENT_TRANSPARENT_DATA" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="EXPIRY_POLICY_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="EXPIRY_DAYS_EXTENSION" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="EXPIRY_ABSOLUTE_DTTM" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="EVENT_INFO_0" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="TOUCH_IND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="PARENT_HOMETIMEZONE_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="ROP_KEY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CARD_TYPE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SESSION_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="UOM" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="TRANSACTION_ID" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_6" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_7" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_8" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DEDUCTED_WALLET_NAME_9" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_5" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_6" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_7" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_8" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="WALLET_DEDUCT_9" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_5" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_6" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_7" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_8" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="38" name="DEDUCTED_WALLET_BALANCE_9" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_8" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="DEDUCTED_WALLET_EXPIRY_DTTM_9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="11" name="INSERT_DTTM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="SUBBRAND" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="RAW_FILENAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="TRNSFRM_DATASTARTTIME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="PARTITION" name="PARTITION">
+      <column comment="" key="false" length="20" name="TALEND_BATCH_ID" nullable="true" pattern="" precision="-1" sourceType="STRING" type="id_String" originalLength="20" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveCreateTable_1" offsetLabelX="0" offsetLabelY="0" source="tHiveCreateTable_1" target="tHiveCreateTable_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_1" target="tHiveCreateTable_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHiveCreateTable_5" offsetLabelX="0" offsetLabelY="0" source="tHiveCreateTable_5" target="tHiveCreateTable_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="ACCT_BAL"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CONNECT CDR"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_5" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="CREDIT_ADJ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_7" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="DEBIT_ADJ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

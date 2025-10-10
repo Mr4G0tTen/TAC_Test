@@ -3,33 +3,33 @@
   <model:JobletProcess defaultContext="SIT" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="SIT">
       <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:/Work/Talend/LocalProject/db_connection_file.csv" internalId="_Ho3mIJj5EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjicJj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjicZj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjicpj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjic5j6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjidJj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjidZj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjidpj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjicJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjicZj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjicpj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjic5j6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjidJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjidZj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjidpj6EfC_V6lBu79mbQ"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="UAT">
       <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Ho3mIZj5EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjid5j6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjieJj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjieZj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjiepj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjie5j6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjifJj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjifZj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjid5j6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjieJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjieZj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjiepj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjie5j6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjifJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjifZj6EfC_V6lBu79mbQ"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="PRD">
       <contextParameter comment="" name="db_context_filepath" prompt="db_context_filepath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Ho3mIpj5EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjifpj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjif5j6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjigJj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjigZj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjigpj6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjig5j6EfC_V6lBu79mbQ"/>
-      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="_wuii8Jj5EfC_V6lBu79mbQ" type="id_String" value="" internalId="_HSjihJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_ad_jdbc_params" prompt="db_mssql_ad_jdbc_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjifpj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_database" prompt="db_mssql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjif5j6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_host" prompt="db_mssql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjigJj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_password" prompt="db_mssql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjigZj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_port" prompt="db_mssql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjigpj6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_schema" prompt="db_mssql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjig5j6EfC_V6lBu79mbQ"/>
+      <contextParameter comment="" name="db_mssql_username" prompt="db_mssql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_HSjihJj6EfC_V6lBu79mbQ"/>
     </context>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -124,10 +124,10 @@
       <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
       <elementParameter field="CHECK" name="TRIMALL" value="false"/>
       <elementParameter field="TABLE" name="TRIMSELECT">
-        <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
-        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
       </elementParameter>
       <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
       <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -136,10 +136,10 @@
       <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
       <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
       <elementParameter field="TABLE" name="DECODE_COLS" show="false">
-        <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
-        <elementValue elementRef="DECODE" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
-        <elementValue elementRef="DECODE" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+        <elementValue elementRef="DECODE" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+        <elementValue elementRef="DECODE" value="false" id="3"/>
       </elementParameter>
       <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
       <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
@@ -161,7 +161,7 @@
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-      <elementParameter field="IMAGE" name="PREVIEW" value="_DR47wJT8EfCZqcrU6Z_J-w-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_zVRP4KTGEfCaUKMgqzha5A-tMap_1-PREVIEW.bmp"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
       <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
       <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -224,14 +224,17 @@
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
       <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+      <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+      <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+      <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
       <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
       <elementParameter field="TEXT" name="LABEL" value="TalendDB"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="400">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Succesfully Connected to TalendDB&quot;);"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Succesfully Connected to TalendDB&quot;);"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_1">
         <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -264,12 +267,15 @@
       <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+      <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
       <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
       <elementParameter field="TABLE" name="TRIM_COLUMN">
-        <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
-        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
       </elementParameter>
       <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
       <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -285,7 +291,7 @@
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-      <elementParameter field="IMAGE" name="PREVIEW" value="_DR47wJT8EfCZqcrU6Z_J-w-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_zVRP4KTGEfCaUKMgqzha5A-tMap_2-PREVIEW.bmp"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
       <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
       <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -330,8 +336,8 @@
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_2"/>
     </node>
@@ -380,21 +386,21 @@
     </connection>
     <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_2">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-        <elementValue elementRef="TRACE_COLUMN" value="key"/>
-        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-        <elementValue elementRef="TRACE_COLUMN" value="value"/>
-        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-        <elementValue elementRef="TRACE_COLUMN" value="context_group"/>
-        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-        <elementValue elementRef="TRACE_COLUMN" value="parameter_value"/>
-        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-        <elementValue elementRef="TRACE_COLUMN" value="parameter_name"/>
-        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="key" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="value" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="context_group" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="parameter_value" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="parameter_name" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
@@ -411,48 +417,48 @@
     </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
     <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="40" posY="160" input="true" trigger="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>

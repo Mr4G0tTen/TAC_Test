@@ -1,0 +1,29 @@
+{
+  "itemId" : "_Fy-nsDIQEfCg74Grmm6peg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_a07cwDE6EfCg74Grmm6peg",
+    "parameterList" : [ {
+      "id" : "_a2gxITE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Password"
+    }, {
+      "id" : "_a2gxIjE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Login"
+    }, {
+      "id" : "_a2gxIzE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Port"
+    }, {
+      "id" : "_a2gxJDE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Database"
+    }, {
+      "id" : "_a2gxJTE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Schema"
+    }, {
+      "id" : "_a2gxJjE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_Server"
+    }, {
+      "id" : "_a2gxJzE6EfCg74Grmm6peg",
+      "name" : "postgres_sbstdb_AdditionalParams"
+    } ]
+  } ]
+}

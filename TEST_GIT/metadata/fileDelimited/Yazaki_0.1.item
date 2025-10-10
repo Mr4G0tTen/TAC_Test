@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_MS2KMNJBEe-8J4jW4r8d8g" name="Yazaki" dataPackage="_MS2KMdJBEe-8J4jW4r8d8g" Server="Localhost 127.0.0.1" FilePath="C:/Users/RahmanaDwiShaputra/Downloads/_GR_SAMITF_INVENTORY_WMS_TPBSUPPLIER__202412301512 1.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_MS2KMdJBEe-8J4jW4r8d8g" name="default" dataManager="_MS2KMNJBEe-8J4jW4r8d8g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MS2KMtJBEe-8J4jW4r8d8g" id="_C_IjINJBEe-8J4jW4r8d8g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MS2KM9JBEe-8J4jW4r8d8g" label="_PASOK_NAMA" length="58" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MS2KNNJBEe-8J4jW4r8d8g" label="_NAMA_SUPP" length="47" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

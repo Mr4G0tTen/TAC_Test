@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_mS318EqEEfCVZbswMFD4Mw" name="kpi_schema_temp" dataPackage="_mS318UqEEfCVZbswMFD4Mw" Server="Localhost 127.0.0.1" FilePath="C:/Users/Hamidi/Documents/Documents/YAZAKI/kpi_schema_temp.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_mS318UqEEfCVZbswMFD4Mw" name="default" dataManager="_mS318EqEEfCVZbswMFD4Mw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mS318kqEEfCVZbswMFD4Mw" id="_e6iWcEqEEfCVZbswMFD4Mw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mS3180qEEfCVZbswMFD4Mw" label="SCHEMA_NAME" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mS319EqEEfCVZbswMFD4Mw" label="PLAN_SOURCE" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

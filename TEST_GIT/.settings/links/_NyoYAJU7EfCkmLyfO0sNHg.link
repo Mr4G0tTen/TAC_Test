@@ -1,0 +1,29 @@
+{
+  "itemId" : "_NyoYAJU7EfCkmLyfO0sNHg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_EJ94UP8UEe-uHLRosiKKBg",
+    "parameterList" : [ {
+      "id" : "_EKZ9Mf8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Login"
+    }, {
+      "id" : "_EKZ9Mv8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Server"
+    }, {
+      "id" : "_EKZ9M_8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Password"
+    }, {
+      "id" : "_EKZ9NP8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_AdditionalParams"
+    }, {
+      "id" : "_EKZ9Nf8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Database"
+    }, {
+      "id" : "_EKZ9Nv8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Port"
+    }, {
+      "id" : "_EKZ9N_8UEe-uHLRosiKKBg",
+      "name" : "Artha_Db_Postgres_Stewardship_Schema"
+    } ]
+  } ]
+}

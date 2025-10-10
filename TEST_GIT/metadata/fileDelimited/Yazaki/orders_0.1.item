@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_DuwZIKr4Ee-1dN3Aj2aLKA" name="orders" dataPackage="_DuwZIar4Ee-1dN3Aj2aLKA" Server="Localhost 127.0.0.1" FilePath="C:/Users/Hamidi/Documents/Documents/YAZAKI/Data Sample Bike Store/orders.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_DuwZIar4Ee-1dN3Aj2aLKA" name="default" dataManager="_DuwZIKr4Ee-1dN3Aj2aLKA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DuwZIqr4Ee-1dN3Aj2aLKA" id="_nKypYKr3Ee-1dN3Aj2aLKA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZI6r4Ee-1dN3Aj2aLKA" label="order_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZJKr4Ee-1dN3Aj2aLKA" label="customer_id" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZJar4Ee-1dN3Aj2aLKA" label="order_status" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZJqr4Ee-1dN3Aj2aLKA" label="order_date" length="225" talendType="id_String" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZJ6r4Ee-1dN3Aj2aLKA" label="required_date" length="225" talendType="id_String" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZKKr4Ee-1dN3Aj2aLKA" label="shipped_date" length="225" talendType="id_String" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_omNhsKr7Ee-1dN3Aj2aLKA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZKar4Ee-1dN3Aj2aLKA" label="store_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DuwZKqr4Ee-1dN3Aj2aLKA" label="staff_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

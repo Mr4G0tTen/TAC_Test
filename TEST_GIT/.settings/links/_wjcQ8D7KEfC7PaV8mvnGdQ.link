@@ -1,0 +1,33 @@
+{
+  "itemId" : "_wjcQ8D7KEfC7PaV8mvnGdQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_D6TaAD3xEfCbW4TNr9rxbQ",
+    "parameterList" : [ {
+      "id" : "_Noq7wD38EfCbW4TNr9rxbQ",
+      "name" : "source_count"
+    }, {
+      "id" : "_Noq7wT38EfCbW4TNr9rxbQ",
+      "name" : "target_count"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_uS-i4D4JEfCbW4TNr9rxbQ",
+    "parameterList" : [ {
+      "id" : "_pz6UlD4fEfCNDsra3F4Lpg",
+      "name" : "run_flag"
+    }, {
+      "id" : "_pz6UkT4fEfCNDsra3F4Lpg",
+      "name" : "extraction_start_date"
+    }, {
+      "id" : "_pz6UkD4fEfCNDsra3F4Lpg",
+      "name" : "extraction_end_date"
+    }, {
+      "id" : "_pz6Ukz4fEfCNDsra3F4Lpg",
+      "name" : "month_key"
+    }, {
+      "id" : "_pz6Ukj4fEfCNDsra3F4Lpg",
+      "name" : "flag_message"
+    } ]
+  } ]
+}

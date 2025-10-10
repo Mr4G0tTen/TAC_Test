@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_EKZ9MP8UEe-uHLRosiKKBg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_EKZ9Mf8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Login" prompt="Artha_Db_Postgres_Stewardship_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_EKZ9Mv8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Server" prompt="Artha_Db_Postgres_Stewardship_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="192.168.10.120"/>
+  <contextParameter xmi:id="_EKZ9M_8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Password" prompt="Artha_Db_Postgres_Stewardship_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:YD/TRFbd89D7x567f0/f6BG5c8fcIfH98+rsjNck5+n15kdRTqCJfrI58nt4"/>
+  <contextParameter xmi:id="_EKZ9NP8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_AdditionalParams" prompt="Artha_Db_Postgres_Stewardship_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_EKZ9Nf8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Database" prompt="Artha_Db_Postgres_Stewardship_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stewardship"/>
+  <contextParameter xmi:id="_EKZ9Nv8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Port" prompt="Artha_Db_Postgres_Stewardship_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_EKZ9N_8UEe-uHLRosiKKBg" comment="" name="Artha_Db_Postgres_Stewardship_Schema" prompt="Artha_Db_Postgres_Stewardship_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Dynamic_Ingestion"/>
+</talendfile:ContextType>

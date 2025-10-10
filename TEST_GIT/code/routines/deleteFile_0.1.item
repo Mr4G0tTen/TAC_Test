@@ -1,0 +1,21 @@
+package routines;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class deleteFile {
+    public static boolean isOlderThanTwoDays(String fileNameDate) throws Exception {
+        // Ambil tanggal dari nama file (format: YYYY-MM-DD)
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date fileDate = sdf.parse(fileNameDate);
+
+        // Hitung tanggal 2 hari sebelumnya
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.DATE, -2);
+        Date thresholdDate = cal.getTime();
+
+        // Kembalikan hasil perbandingan
+        return fileDate.before(thresholdDate);
+    }
+}
